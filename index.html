@@ -164,6 +164,73 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/Cyberyzy/2023/03/22/Principle/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/zy-yang.github.io/images/as.png">
+      <meta itemprop="name" content="zy-yang">
+      <meta itemprop="description" content="所有随风而逝的都属于昨天，所有历经风雨留下的才是面向未来">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Le blog de yzy">
+    </span>
+      <header class="post-header">
+        <
+         <h2 class="post-title"itemprop="name headline">
+          
+            <a href="/zy-yang.github.io/2023/03/22/Principle/" class="post-title-link" itemprop="url">Generalized Argument Principle</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-03-22 10:18:35 / 修改时间：10:54:17" itemprop="dateCreated datePublished" datetime="2023-03-22T10:18:35+08:00">2023-03-22</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="定理陈述"><a href="#定理陈述" class="headerlink" title="定理陈述"></a>定理陈述</h3><p>Stein的复分析 Chapter 3 Exercise 16的第二问用到了这个结论。<br>广义幅角原理指的是<br>$$<br>\frac{1}{2 \pi i} \oint_{C} g(z) \frac{f^{\prime}(z)}{f(z)} d z=\sum_{a} n(C, a) g(a)-\sum_{b} n(C, b) g(b)<br>$$<br>例如，如果 $f$ 是以一个简单围道 $C$ 内部 $z_1 ， \ldots, z_p$ 为零点的多项式，以及 $g(z)=z^k$ ，则<br>$$<br>\frac{1}{2 \pi i} \oint_C z^k \frac{f^{\prime}(z)}{f(z)} d z=z_1^k+z_2^k+\cdots+z_p^k<br>$$<br>是 $ f $ 的根的次方和对称多项式。</p>
+<h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>考虑<br>$$<br>f(z)=\frac{\prod_{j=1}^n\left(z-z_j\right)}{\prod_{k=1}^m\left(z-p_k\right)} h(z)<br>$$<br>其中h是全纯函数，求对数导数有<br>$$<br>\frac{f^{\prime}(z)}{f(z)}=\sum_{j=1}^n \frac{1}{z-z_j}-\sum_{k=1}^m \frac{1}{z-p_k}+\frac{h^{\prime}(z)}{h(z)}<br>$$<br>乘上$ g(z) $ 后<br>$$<br>\begin{aligned}<br>g(z) \frac{f^{\prime}(z)}{f(z)}=&amp;\sum_{j=1}^n \frac{g(z)}{z-z_j}-\sum_{k=1}^m \frac{g(z)}{z-p_k}+g(z) \frac{h^{\prime}(z)}{h(z)} \<br>=&amp; \sum_{j=1}^n \frac{g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g\left(p_k\right)}{z-p_k}+\left(g(z) \frac{h^{\prime}(z)}{h(z)}+\sum_{j=1}^n \frac{g(z)-g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g(z)-g\left(p_k\right)}{z-p_k}\right)\<br>\end{aligned}<br>$$<br>括号里的项只有可去奇点，则<br>$$<br>g(z) \frac{f^{\prime}(z)}{f(z)}=\sum_{j=1}^n \frac{g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g\left(p_k\right)}{z-p_k}+\phi(z)<br>$$<br>其中$ \phi(z) $ 为全纯函数。</p>
+<p>对上式apply Residue Theorem即得。</p>
+<p>关于复分析里的习题，</p>
+<ol start="16">
+<li>Suppose $f$ and $g$ are holomorphic in a region containing the disc $|z| \leq 1$. Suppose that $f$ has a simple zero at $z=0$ and vanishes nowhere else in $|z| \leq 1$. Let<br>$$<br>f_\epsilon(z)=f(z)+\epsilon g(z)<br>$$<br>Show that if $\epsilon$ is sufficiently small, then<br>(a) $f_\epsilon(z)$ has a unique zero in $|z| \leq 1$, and 16. Suppose $f$ and $g$ are ho Suppose that $f$ has a simple Let<br>(b) if $z_\epsilon$ is this zero, the mapping $\epsilon \mapsto z_\epsilon$ is continuous.</li>
+</ol>
+<p>第二问只需要利用 广义幅角原理的推论即可证明。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://github.com/Cyberyzy/2023/03/17/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E5%9B%9B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -823,85 +890,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/Cyberyzy/2022/12/03/post2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/zy-yang.github.io/images/as.png">
-      <meta itemprop="name" content="zy-yang">
-      <meta itemprop="description" content="所有随风而逝的都属于昨天，所有历经风雨留下的才是面向未来">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Le blog de yzy">
-    </span>
-      <header class="post-header">
-        <
-         <h2 class="post-title"itemprop="name headline">
-          
-            <a href="/zy-yang.github.io/2022/12/03/post2/" class="post-title-link" itemprop="url">回顾函数发生器</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-12-03 14:16:55 / 修改时间：16:36:27" itemprop="dateCreated datePublished" datetime="2022-12-03T14:16:55+08:00">2022-12-03</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/zy-yang.github.io/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="我们有哪些工具可以用？"><a href="#我们有哪些工具可以用？" class="headerlink" title="我们有哪些工具可以用？"></a>我们有哪些工具可以用？</h2><ol>
-<li><p>__电压比较器__：一般、过零比较器、滞回比较器、窗口比较器</p>
-</li>
-<li><p><strong>各种运算电路</strong></p></li></ol>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/zy-yang.github.io/2022/12/03/post2/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -997,7 +985,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/zy-yang.github.io/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1010,7 +998,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/zy-yang.github.io/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
