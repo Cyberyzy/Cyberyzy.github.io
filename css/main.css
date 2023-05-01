@@ -177,8 +177,8 @@ body {
 body {
   background: var(--body-bg-color);
   color: var(--text-color);
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 1em;
+  font-family: 'Noto Serif SC', "Noto Serif Simplified Chinese", sans-serif;
+  font-size: 16px;
   line-height: 2;
 }
 @media (max-width: 991px) {
@@ -193,7 +193,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Comic Neue', 'Noto Serif SC', "Noto Serif Simplified Chinese", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 15px;
@@ -391,7 +391,7 @@ pre {
 }
 pre,
 code {
-  font-family: consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei";
+  font-family: 'Comic Neue', consolas, Menlo, 'Noto Serif SC', "Noto Serif Simplified Chinese", sans-serif, monospace;
 }
 code {
   background: #eee;
@@ -990,7 +990,7 @@ pre .javascript .function {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Comic Neue', 'Noto Serif SC', "Noto Serif Simplified Chinese", sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   margin: 0;
@@ -1148,12 +1148,6 @@ pre .javascript .function {
   padding: 2px;
   border-radius: 50%;
 }
-.site-author-image {
-  transition: transform 1s ease-out;
-}
-.site-author-image:hover {
-  transform: rotateZ(360deg);
-}
 .site-author-name {
   color: var(--text-color);
   font-weight: 600;
@@ -1183,7 +1177,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffed38;
+  background: #9360ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1509,10 +1503,7 @@ pre .javascript .function {
   position: fixed;
   transition-property: bottom;
   z-index: 1300;
-  width: 24px;
-}
-.back-to-top span {
-  display: none;
+  width: initial;
 }
 .back-to-top:hover {
   color: #fc6423;
@@ -1527,7 +1518,7 @@ pre .javascript .function {
   }
 }
 .post-body {
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Comic Neue', 'Noto Serif SC', "Noto Serif Simplified Chinese", sans-serif;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -1825,7 +1816,7 @@ pre .javascript .function {
 }
 .posts-expand .post-meta {
   color: #999;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Comic Neue', 'Noto Serif SC', "Noto Serif Simplified Chinese", sans-serif;
   font-size: 0.75em;
   margin: 3px 0 60px 0;
   text-align: center;
