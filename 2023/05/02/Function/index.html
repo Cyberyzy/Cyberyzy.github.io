@@ -24,19 +24,20 @@
     var CONFIG = {"hostname":"github.com","root":"/zy-yang.github.io/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="$\nabla^2 \phi&#x3D;0$$\phi(R)&#x3D;U$">
-<meta property="og:type" content="website">
-<meta property="og:title" content="目录">
-<meta property="og:url" content="https://github.com/Cyberyzy/categories/index.html">
+  <meta name="description" content="Introduction of elliptic function~💩">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Elliptic Function">
+<meta property="og:url" content="https://github.com/Cyberyzy/2023/05/02/Function/index.html">
 <meta property="og:site_name" content="Le blog de yzy">
-<meta property="og:description" content="$\nabla^2 \phi&#x3D;0$$\phi(R)&#x3D;U$">
+<meta property="og:description" content="Introduction of elliptic function~💩">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-12-02T01:31:11.000Z">
-<meta property="article:modified_time" content="2023-03-04T13:38:12.356Z">
+<meta property="article:published_time" content="2023-05-02T11:59:45.000Z">
+<meta property="article:modified_time" content="2023-05-02T13:09:43.647Z">
 <meta property="article:author" content="zy-yang">
+<meta property="article:tag" content="椭圆函数">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://github.com/Cyberyzy/categories/">
+<link rel="canonical" href="https://github.com/Cyberyzy/2023/05/02/Function/">
 
 
 <script id="page-configurations">
@@ -44,13 +45,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>目录 | Le blog de yzy
-</title>
+  <title>Elliptic Function | Le blog de yzy</title>
   
 
 
@@ -163,51 +163,100 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="zh-CN">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/Cyberyzy/2023/05/02/Function/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/zy-yang.github.io/images/as.png">
+      <meta itemprop="name" content="zy-yang">
+      <meta itemprop="description" content="所有随风而逝的都属于昨天，所有历经风雨留下的才是面向未来">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Le blog de yzy">
+    </span>
       <header class="post-header">
+        <h1 class="post-title"itemprop="name headline">
+          Elliptic Function
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">目录
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
 
-<div class="post-meta">
+              <time title="创建时间：2023-05-02 19:59:45 / 修改时间：21:09:43" itemprop="dateCreated datePublished" datetime="2023-05-02T19:59:45+08:00">2023-05-02</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Introduction of elliptic function~💩</p>
+<span id="more"></span> 
+<h2 id="Approach-from-Jacobi"><a href="#Approach-from-Jacobi" class="headerlink" title="Approach from Jacobi"></a>Approach from Jacobi</h2><p>Jacobi considered the exact solution of Motion of Simple Pendulum. Let $ m $ be the mass of the<br>bob at the end of the pendulum, $ a $ be the length of the pendulum, $ \theta $ be the<br>angle of inclination which the pendulum makes with a vertical line,$ \alpha $ be the<br>initial angle of inclination when the pendulum is released from rest position<br>at time zero, $ t $ be the time variable, and $ g  $ be the constant of the gravity of<br>the earth. The equation of the conservation of energy is $$<br>    \frac{1}{2}ma^2\left(\frac{d\theta}{dt}\right)-mgacos\theta=-mgacos\alpha<br>$$ </p>
+<p>Replace $ cos\theta $ by $ 1-\dfrac{\theta^2}{2} $ to give $$<br>    \left(\frac{d\theta}{dt}\right)^2+A\theta^2=B<br>$$<br>solution is $$<br>    t=\rho sin(\sigma \theta+\tau)<br>$$ </p>
+<p>But what is the exact solution?</p>
+<p>Exchange function by using double angle formula<br>$$<br>     \left(\frac{d\theta}{dt}\right)^2=2\frac{g}{a}(cos\theta-cos\alpha)=4\frac{g}{a}(sin^2\dfrac{\alpha}{2}-sin^2\dfrac{\theta}{2})<br>$$<br>$$<br>    =4\frac{gsin^2\frac{\alpha}{2}}{a}(1-\left(\frac{sin\frac{\theta}{2}}{sin\frac{\alpha}{2}}\right)^2)<br>$$ </p>
+<p>What does it mean?</p>
+<p>$$<br>    cos\theta\approx 1-\frac{\theta^2}{2}\space and\space cos\theta=1-2sin^2(\theta)<br>$$<br>gives out the motivation. Exchange $ sin\frac{\alpha}{2} $ as $ sin\varphi $, then$$<br>    \left(\dfrac{d\varphi}{dt}\right)^2=\dfrac{g}{a}\left(1-\sin^2\dfrac{\alpha}{2}\sin^2\varphi\right).<br>$$<br>and the solution is$$<br>    t=\sqrt{\dfrac{a}{g}}\int_{\psi=0}^{\varphi}\dfrac{d\psi}{\sqrt{1-\sin^2\frac{\alpha}{2}\sin^2\psi}}.<br>$$<br>We also know $$<br>    \int_{0}^{\frac{\pi}{2}}\sin^{2n}\varphi d\varphi=\dfrac{\pi}{2}\cdot\dfrac{1\cdot3\cdot5\cdots(2n-1)}{2\cdot4\cdot6\cdots(2n)}<br>$$<br>by residue theorem, we can take Taylor expansion of the solution which is $$<br>    \begin{gathered}<br>=2\pi\sqrt{\frac{a}{g}}\left(1+\left(\frac{1}{2}\right)^{2}k^{2}+\left(\frac{1\cdot3}{2\cdot4}\right)^{2}k^{4}+\cdots\right),<br>\end{gathered}<br>$$ </p>
+<p>That is where elliptic function araises</p>
+<h2 id="Abel’s-approach"><a href="#Abel’s-approach" class="headerlink" title="Abel’s approach"></a>Abel’s approach</h2><p>Consider the integration of the 1-form$$<br>    \omega:=\frac{dz}{\sqrt{(1-z^2)(1-k^2z^2)}},\quad z\in \mathbb{C}<br>$$<br>function$$<br>    \sqrt{(1-z^2)(1-k^2z^2)}<br>$$<br>has four roots and it’s double-valued. We want to turn it into single-valued. The idea is construct a <strong>new structure</strong> replace a single point by two points(except $ z=\pm 1,\pm 1/k $ )</p>
+<p>on the domain obtained by removing the two branch-cuts [−1/k,−1] and [1,1/k]<br>from the Riemann sphere $ \mathbb{P}_1 =\mathbb{C} \bigcup {\infty}  $ . The two branches are the negative of each other. Any of the two branches take values of opposite sign on both edges of each of the two branch-cuts. To get the Riemann surface X we can take two copies of $ \mathbb{P}_1-\left(\left[\frac{-1}{k},-1\right]\cup\left[1,\frac{1}{k}\right]\right) $ and join them by identifying the upper<br>edge of $ \left[\frac{-1}{k},-1\right] $  in one copy identified with the lower edge of $ \left[\frac{-1}{k},-1\right] $<br>in the<br>other copy and at the same time identifying the upper edge of $ \left[1,\frac{1}{k}\right] $<br>in onecopy identified with the lower edge of $ \left[1,\frac{1}{k}\right] $ in the other copy.</p>
+<h2 id="Weierstrass-wp-z-function"><a href="#Weierstrass-wp-z-function" class="headerlink" title="Weierstrass $ \wp(z) $ function"></a>Weierstrass $ \wp(z) $ function</h2>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/zy-yang.github.io/tags/%E6%A4%AD%E5%9C%86%E5%87%BD%E6%95%B0/" rel="tag"># 椭圆函数</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/zy-yang.github.io/2023/05/01/hello-world-1/index.html" rel="prev" title="About Me">
+      <i class="fa fa-chevron-left"></i> About Me
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <div class="category-all-page">
-            <div class="category-all-title">
-              目前共计 3 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/zy-yang.github.io/categories/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/">数学笔记</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/zy-yang.github.io/categories/%E6%9D%82%E7%AB%A0%E6%95%A3%E4%B9%A6/">杂章散书</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/zy-yang.github.io/categories/%E7%AC%94%E8%AE%B0/">笔记</a><span class="category-list-count">4</span></li></ul>
-            </div>
-          </div>
-        
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
 
 
           </div>
@@ -285,6 +334,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Approach-from-Jacobi"><span class="nav-number">1.</span> <span class="nav-text">Approach from Jacobi</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Abel%E2%80%99s-approach"><span class="nav-number">2.</span> <span class="nav-text">Abel’s approach</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Weierstrass-wp-z-function"><span class="nav-number">3.</span> <span class="nav-text">Weierstrass $ \wp(z) $ function</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -510,6 +560,59 @@ document.querySelectorAll('.pdfobject-container').forEach(element => {
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
