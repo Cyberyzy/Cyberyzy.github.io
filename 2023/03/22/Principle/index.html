@@ -23,13 +23,13 @@
 <meta property="og:site_name" content="Le blog de yzy">
 <meta property="og:description" content="定理陈述Stein的复分析 Chapter 3 Exercise 16的第二问用到了这个结论。广义幅角原理指的是$$\frac{1}{2 \pi i} \oint_{C} g(z) \frac{f^{\prime}(z)}{f(z)} d z&#x3D;\sum_{a} n(C, a) g(a)-\sum_{b} n(C, b) g(b)$$例如，如果 $f$ 是以一个简单围道 $C$ 内部 $z_1 ，">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://github.com/zy-yang.github.io/2023/03/22/Principle/A.png">
+<meta property="og:image" content="https://github.com/Cyberyzy.github.io/2023/03/22/Principle/A.png">
 <meta property="article:published_time" content="2023-03-22T02:18:35.000Z">
 <meta property="article:modified_time" content="2023-05-03T06:38:27.952Z">
 <meta property="article:author" content="zy-yang">
 <meta property="article:tag" content="复分析">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://github.com/zy-yang.github.io/2023/03/22/Principle/A.png">
+<meta name="twitter:image" content="https://github.com/Cyberyzy.github.io/2023/03/22/Principle/A.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -323,7 +323,7 @@
 <h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>考虑<br>$$<br>f(z)=\frac{\prod_{j=1}^n\left(z-z_j\right)}{\prod_{k=1}^m\left(z-p_k\right)} h(z)<br>$$<br>其中h是全纯函数，求对数导数有<br>$$<br>\frac{f^{\prime}(z)}{f(z)}=\sum_{j=1}^n \frac{1}{z-z_j}-\sum_{k=1}^m \frac{1}{z-p_k}+\frac{h^{\prime}(z)}{h(z)}<br>$$<br>乘上$ g(z) $ 后<br>$$<br>\begin{aligned}<br>g(z) \frac{f^{\prime}(z)}{f(z)}=&amp;\sum_{j=1}^n \frac{g(z)}{z-z_j}-\sum_{k=1}^m \frac{g(z)}{z-p_k}+g(z) \frac{h^{\prime}(z)}{h(z)} \<br>=&amp; \sum_{j=1}^n \frac{g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g\left(p_k\right)}{z-p_k}+\left(g(z) \frac{h^{\prime}(z)}{h(z)}+\sum_{j=1}^n \frac{g(z)-g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g(z)-g\left(p_k\right)}{z-p_k}\right)\<br>\end{aligned}<br>$$<br>括号里的项只有可去奇点，则<br>$$<br>g(z) \frac{f^{\prime}(z)}{f(z)}=\sum_{j=1}^n \frac{g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g\left(p_k\right)}{z-p_k}+\phi(z)<br>$$<br>其中$ \phi(z) $ 为全纯函数。</p>
 <p>对上式apply Residue Theorem即得。</p>
 <h3 id="Geometric-Picture-of-Argument-Principle"><a href="#Geometric-Picture-of-Argument-Principle" class="headerlink" title="Geometric Picture of Argument Principle"></a>Geometric Picture of Argument Principle</h3><p> 关于幅角原理，我们从另一个角度看，取一个区域 $ \Omega $, 如果 $ f(z)=p $ 在这个区域上有零点，考虑 $ g(z)=f(z)-p $ 的零点数，即 $$<br>     N(f(z)-p,\Omega)=\frac{1}{2\pi i}\int_{\partial \Omega}\mathrm{d} log(f(z)-p)=\frac{1}{2\pi }\int_{\partial \Omega}\mathrm{d} arg(log(f(z)-p))<br> $$<br> 这就是f(z)环绕p的环绕数。如图所示</p>
-<p><img src="/zy-yang.github.io/2023/03/22/Principle/A.png" srcset="/Cyberyzy.github.io/img/loading.gif" lazyload alt="&quot;A-geometrical-interpretation-of-the-Argument-Principle&quot;"></p>
+<p><img src="/Cyberyzy.github.io/2023/03/22/Principle/A.png" srcset="/Cyberyzy.github.io/img/loading.gif" lazyload alt="&quot;A-geometrical-interpretation-of-the-Argument-Principle&quot;"></p>
 <p>关于复分析里的习题，</p>
 <ol>
 <li>Suppose $f$ and $g$ are holomorphic in a region containing the disc $|z| \leq 1$. Suppose that $f$ has a simple zero at $z=0$ and vanishes nowhere else in $|z| \leq 1$. Let<br>$$<br>f_\epsilon(z)=f(z)+\epsilon g(z)<br>$$<br>Show that if $\epsilon$ is sufficiently small, then<br>(a) $f_\epsilon(z)$ has a unique zero in $|z| \leq 1$, and 16. Suppose $f$ and $g$ are ho Suppose that $f$ has a simple Let<br>(b) if $z_\epsilon$ is this zero, the mapping $\epsilon \mapsto z_\epsilon$ is continuous.</li>
