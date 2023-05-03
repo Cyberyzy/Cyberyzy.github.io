@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Elliptic Function</title>
+    <link href="/zy-yang.github.io/2023/05/02/Function/"/>
+    <url>/zy-yang.github.io/2023/05/02/Function/</url>
+    
+    <content type="html"><![CDATA[<p>Introduction of elliptic function~💩</p><span id="more"></span> <h2 id="Approach-from-Jacobi"><a href="#Approach-from-Jacobi" class="headerlink" title="Approach from Jacobi"></a>Approach from Jacobi</h2><p>Jacobi considered the exact solution of Motion of Simple Pendulum. Let $ m $ be the mass of the<br>bob at the end of the pendulum, $ a $ be the length of the pendulum, $ \theta $ be the<br>angle of inclination which the pendulum makes with a vertical line,$ \alpha $ be the<br>initial angle of inclination when the pendulum is released from rest position<br>at time zero, $ t $ be the time variable, and $ g  $ be the constant of the gravity of<br>the earth. The equation of the conservation of energy is $$<br>    \frac{1}{2}ma^2\left(\frac{d\theta}{dt}\right)-mgacos\theta=-mgacos\alpha<br>$$ </p><p>Replace $ cos\theta $ by $ 1-\dfrac{\theta^2}{2} $ to give $$<br>    \left(\frac{d\theta}{dt}\right)^2+A\theta^2=B<br>$$<br>solution is $$<br>    t=\rho sin(\sigma \theta+\tau)<br>$$ </p><p>But what is the exact solution?</p><p>Exchange function by using double angle formula<br>$$<br>     \left(\frac{d\theta}{dt}\right)^2=2\frac{g}{a}(cos\theta-cos\alpha)=4\frac{g}{a}(sin^2\dfrac{\alpha}{2}-sin^2\dfrac{\theta}{2})<br>$$<br>$$<br>    =4\frac{gsin^2\frac{\alpha}{2}}{a}(1-\left(\frac{sin\frac{\theta}{2}}{sin\frac{\alpha}{2}}\right)^2)<br>$$ </p><p>What does it mean?</p><p>$$<br>    cos\theta\approx 1-\frac{\theta^2}{2}\space and\space cos\theta=1-2sin^2(\theta)<br>$$<br>gives out the motivation. Exchange $ sin\frac{\alpha}{2} $ as $ sin\varphi $, then$$<br>    \left(\dfrac{d\varphi}{dt}\right)^2=\dfrac{g}{a}\left(1-\sin^2\dfrac{\alpha}{2}\sin^2\varphi\right).<br>$$<br>and the solution is$$<br>    t=\sqrt{\dfrac{a}{g}}\int_{\psi=0}^{\varphi}\dfrac{d\psi}{\sqrt{1-\sin^2\frac{\alpha}{2}\sin^2\psi}}.<br>$$<br>We also know $$<br>    \int_{0}^{\frac{\pi}{2}}\sin^{2n}\varphi d\varphi=\dfrac{\pi}{2}\cdot\dfrac{1\cdot3\cdot5\cdots(2n-1)}{2\cdot4\cdot6\cdots(2n)}<br>$$<br>by residue theorem, we can take Taylor expansion of the solution which is $$<br>    \begin{gathered}<br>=2\pi\sqrt{\frac{a}{g}}\left(1+\left(\frac{1}{2}\right)^{2}k^{2}+\left(\frac{1\cdot3}{2\cdot4}\right)^{2}k^{4}+\cdots\right),<br>\end{gathered}<br>$$ </p><p>That is where elliptic function araises</p><h2 id="Abel’s-approach"><a href="#Abel’s-approach" class="headerlink" title="Abel’s approach"></a>Abel’s approach</h2><p>Consider the integration of the 1-form$$<br>    \omega:=\frac{dz}{\sqrt{(1-z^2)(1-k^2z^2)}},\quad z\in \mathbb{C}<br>$$<br>function$$<br>    \sqrt{(1-z^2)(1-k^2z^2)}<br>$$<br>has four roots and it’s double-valued. We want to turn it into single-valued. The idea is construct a <strong>new structure</strong> replace a single point by two points(except $ z=\pm 1,\pm 1/k $ )</p><p>on the domain obtained by removing the two branch-cuts [−1/k,−1] and [1,1/k]<br>from the Riemann sphere $ \mathbb{P}_1 =\mathbb{C} \bigcup {\infty}  $ . The two branches are the negative of each other. Any of the two branches take values of opposite sign on both edges of each of the two branch-cuts. To get the Riemann surface X we can take two copies of $ \mathbb{P}_1-\left(\left[\frac{-1}{k},-1\right]\cup\left[1,\frac{1}{k}\right]\right) $ and join them by identifying the upper<br>edge of $ \left[\frac{-1}{k},-1\right] $  in one copy identified with the lower edge of $ \left[\frac{-1}{k},-1\right] $<br>in the<br>other copy and at the same time identifying the upper edge of $ \left[1,\frac{1}{k}\right] $<br>in onecopy identified with the lower edge of $ \left[1,\frac{1}{k}\right] $ in the other copy.</p><h2 id="Weierstrass-wp-z-function"><a href="#Weierstrass-wp-z-function" class="headerlink" title="Weierstrass $ \wp(z) $ function"></a>Weierstrass $ \wp(z) $ function</h2>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>椭圆函数</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>About Me</title>
+    <link href="/zy-yang.github.io/2023/05/01/hello-world-1/index.html"/>
+    <url>/zy-yang.github.io/2023/05/01/hello-world-1/index.html</url>
+    
+    <content type="html"><![CDATA[<center><font face="Palace Script MT" size="30">C'est la vie!</font><br><p><font face="Times New Roman" size="3">I’m Shouzhuo, a 20 years old undergradute in THU.<br> ————Welcome to my Blog————<br></font></p></center><br><center>    <form action="https://cyberyzy.github.io/zy-yang.github.io/archives/index.html" method="GET">        <input type="image" src="https://i.loli.net/2021/10/19/tw6WUq8cjxm4gRK.png">    </form></center><center><font face="华文中宋" size="3">数学、电气，以及一个普通人的生活</font></center>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>复分析学习资料</title>
+    <link href="/zy-yang.github.io/2023/04/27/%E5%A4%8D%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/"/>
+    <url>/zy-yang.github.io/2023/04/27/%E5%A4%8D%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>清华园日记·其六</title>
+    <link href="/zy-yang.github.io/2023/04/22/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E5%85%AD/"/>
+    <url>/zy-yang.github.io/2023/04/22/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E5%85%AD/</url>
+    
+    <content type="html"><![CDATA[<p>很久没记了，从第七周到现在，期中周横跨三周，五门学科。现在终于能喘口气了。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>日记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>清华园日记·其五</title>
+    <link href="/zy-yang.github.io/2023/03/24/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E4%BA%94/"/>
+    <url>/zy-yang.github.io/2023/03/24/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E4%BA%94/</url>
+    
+    <content type="html"><![CDATA[<p>今天是赵雷的《程艾影》，好听！不知不觉又是一个周五，这周基本在六教上课了，下午跑步，晚上健身，md, 枯燥但是有趣？</p><p>今天开始报 srt 了，如果我足够好运就会去集电的组，不够好运的话再试试别的。报不上我也要去！或许吧。</p><p>反正都差不多，现在最重要的还是学知识，电磁场、电机学够呛。没啥好写的，似乎每周五都会这么放纵一小会，9点从图书馆出来，到现在，看看视频听听歌，满足一下自己吧，明天又要开始工作了。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>日记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Generalized Argument Principle</title>
+    <link href="/zy-yang.github.io/2023/03/22/Principle/"/>
+    <url>/zy-yang.github.io/2023/03/22/Principle/</url>
+    
+    <content type="html"><![CDATA[<h3 id="定理陈述"><a href="#定理陈述" class="headerlink" title="定理陈述"></a>定理陈述</h3><p>Stein的复分析 Chapter 3 Exercise 16的第二问用到了这个结论。<br>广义幅角原理指的是<br>$$<br>\frac{1}{2 \pi i} \oint_{C} g(z) \frac{f^{\prime}(z)}{f(z)} d z=\sum_{a} n(C, a) g(a)-\sum_{b} n(C, b) g(b)<br>$$<br>例如，如果 $f$ 是以一个简单围道 $C$ 内部 $z_1 ， \ldots, z_p$ 为零点的多项式，以及 $g(z)=z^k$ ，则<br>$$<br>\frac{1}{2 \pi i} \oint_C z^k \frac{f^{\prime}(z)}{f(z)} d z=z_1^k+z_2^k+\cdots+z_p^k<br>$$<br>是 $ f $ 的根的次方和对称多项式。</p><h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>考虑<br>$$<br>f(z)=\frac{\prod_{j=1}^n\left(z-z_j\right)}{\prod_{k=1}^m\left(z-p_k\right)} h(z)<br>$$<br>其中h是全纯函数，求对数导数有<br>$$<br>\frac{f^{\prime}(z)}{f(z)}=\sum_{j=1}^n \frac{1}{z-z_j}-\sum_{k=1}^m \frac{1}{z-p_k}+\frac{h^{\prime}(z)}{h(z)}<br>$$<br>乘上$ g(z) $ 后<br>$$<br>\begin{aligned}<br>g(z) \frac{f^{\prime}(z)}{f(z)}=&amp;\sum_{j=1}^n \frac{g(z)}{z-z_j}-\sum_{k=1}^m \frac{g(z)}{z-p_k}+g(z) \frac{h^{\prime}(z)}{h(z)} \<br>=&amp; \sum_{j=1}^n \frac{g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g\left(p_k\right)}{z-p_k}+\left(g(z) \frac{h^{\prime}(z)}{h(z)}+\sum_{j=1}^n \frac{g(z)-g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g(z)-g\left(p_k\right)}{z-p_k}\right)\<br>\end{aligned}<br>$$<br>括号里的项只有可去奇点，则<br>$$<br>g(z) \frac{f^{\prime}(z)}{f(z)}=\sum_{j=1}^n \frac{g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g\left(p_k\right)}{z-p_k}+\phi(z)<br>$$<br>其中$ \phi(z) $ 为全纯函数。</p><p>对上式apply Residue Theorem即得。</p><h3 id="Geometric-Picture-of-Argument-Principle"><a href="#Geometric-Picture-of-Argument-Principle" class="headerlink" title="Geometric Picture of Argument Principle"></a>Geometric Picture of Argument Principle</h3><p> 关于幅角原理，我们从另一个角度看，取一个区域 $ \Omega $, 如果 $ f(z)=p $ 在这个区域上有零点，考虑 $ g(z)=f(z)-p $ 的零点数，即 $$<br>     N(f(z)-p,\Omega)=\frac{1}{2\pi i}\int_{\partial \Omega}\mathrm{d} log(f(z)-p)=\frac{1}{2\pi }\int_{\partial \Omega}\mathrm{d} arg(log(f(z)-p))<br> $$<br> 这就是f(z)环绕p的环绕数。如图所示</p><p><img src="/zy-yang.github.io/2023/03/22/Principle/A.png" alt="&quot;A-geometrical-interpretation-of-the-Argument-Principle&quot;"></p><p>关于复分析里的习题，</p><ol><li> Suppose $f$ and $g$ are holomorphic in a region containing the disc $|z| \leq 1$. Suppose that $f$ has a simple zero at $z=0$ and vanishes nowhere else in $|z| \leq 1$. Let<br>$$<br>f_\epsilon(z)=f(z)+\epsilon g(z)<br>$$<br>Show that if $\epsilon$ is sufficiently small, then<br>(a) $f_\epsilon(z)$ has a unique zero in $|z| \leq 1$, and 16. Suppose $f$ and $g$ are ho Suppose that $f$ has a simple Let<br>(b) if $z_\epsilon$ is this zero, the mapping $\epsilon \mapsto z_\epsilon$ is continuous.</li></ol><p>第二问只需要利用 广义幅角原理的推论即可证明。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>复分析</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>清华园日记·其四</title>
+    <link href="/zy-yang.github.io/2023/03/17/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E5%9B%9B/"/>
+    <url>/zy-yang.github.io/2023/03/17/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E5%9B%9B/</url>
+    
+    <content type="html"><![CDATA[<p>累死了，今天一整天在六教。刚刚看完很多的视频，让我能不顾一切的大笑一场，现在在听雷子的《少年锦时》真是我的心头好啊。<br>柏油路越过山坡…晴朗蓝天下，昂头的少年，让人思绪蹁跹。猛然想起小时候看过的精灵鼠小弟，最后一章就是《去北方》</p><p>彼时我对鼠小弟和小鸟的分别很遗憾，不知道小鸟为什么不愿意留下来，不知道鼠小弟为什么一定要独自一人前往北方，好似大海捞针。在春日里，他开着小车，喝沙示汽水，那不是字面意义上的北方。</p><p>春天和北方，或许就是诗和远方吧。</p><p>之前把《红尘客栈》循环了很多遍，<br>太喜欢这首歌了，尤其是 Gin Lee 和张旸的版本，我虽然不太明白什么是”江湖气”， 但是从那里面还是能听出来感情的。<br>就像是知己吧。张旸的京韵大鼓的确很有趣，不同的风格。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>日记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>清华园日记·其三</title>
+    <link href="/zy-yang.github.io/2023/03/11/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E4%B8%89/"/>
+    <url>/zy-yang.github.io/2023/03/11/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E4%B8%89/</url>
+    
+    <content type="html"><![CDATA[<p>日记日记，现在变成周记了，恍惚之间回到了小学六年级，那时候我们也写周记，写的还很认真。关于小学的记忆的确不是很多了，但是我想我始终记得那个夏天。那是2015年的4月左右，当时应该是自习吧，抬头发现教室外面的树映在教室墙壁的瓷砖上，瓷砖是白色的六边形的马赛克砖，这样看上去就像一些深浅不一的绿色六边形拼成了一整块，那是一种触及灵魂的颜色，以至于我一想起来就能回忆起一些盛夏的时光。</p><p>蝉鸣文学的确好笑，但是不得不说那是我们关于夏天的共同记忆。不知从何时起，我的回忆都带上了一些滤镜，玫瑰色的、浅黄的、 golden days 的，很有趣，但也有些伤感。不说了，再说又要陷进去出不来了。</p><p>这周我干了啥，和以前一样，在六教呆上一整天，学电。有什么可说的呢？对了，昨天我第一次看见了沙尘暴，天空很黄，能见度很低，让人窒息。校园里开了不少花，上一个春天我还戴着口罩呢😂，现在桃花、迎春花、连翘争相开放，但是桃花的味道不是很好闻。</p><p><img src="/zy-yang.github.io/2023/03/11/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E4%B8%89/1.jpg" alt="&quot;New Year, new me&quot;"></p><p><img src="/zy-yang.github.io/2023/03/11/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E4%B8%89/2.jpg" alt="&quot;New Year, new me&quot;"></p><p><img src="/zy-yang.github.io/2023/03/11/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E4%B8%89/3.jpg" alt="&quot;New Year, new me&quot;"></p><p>总之很好看啦，😍</p><p>没啥了，我要放松一下，明天还有很重的任务呢。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>日记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>清华园日记·其二</title>
+    <link href="/zy-yang.github.io/2023/03/04/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E4%BA%8C/"/>
+    <url>/zy-yang.github.io/2023/03/04/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E4%BA%8C/</url>
+    
+    <content type="html"><![CDATA[<p>第二周，听 @猫提琴CatOlin 的《穿越时空的思念》写这周的总结。</p><p>很有趣啊，各科难度都变难了，被Stein的复分析干碎了，电磁场过于抽象的场论，以及电机学数电信号与系统。确实要命。</p><p>我觉得我要把所有的时间之七八用于学习。嗯，确实应该这样。之前参加的那个社团很有意思，确实是奇妙的相遇，<br>我只是参加了一个讲座，就被拉进这个社团，前天参加了招新，有点蝴蝶效应的味道啊。</p><p>说来也怪，那群人和我在清华接触的大部分人不一样，他们似乎更有“孩子气”，博一、研三，这些人好像稚气未脱一般的纯真，抑或是我的心理年龄已经变老很多了呢？</p><p>总之很有意思。</p><p>对了，今天还去了北航，走了足足2W步，看了很多飞机，吃了一大锅饭，从来没见过猪肚和鸡肉一起炖，猪肚还只有两块。虽然浪费了很多就是了。总而言之很快乐。这学期大抵会很漫长，因为这么多硬课，不过没关系，我想我准备好了。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>杂章之二</title>
+    <link href="/zy-yang.github.io/2023/02/23/%E6%9D%82%E7%AB%A0%E4%B9%8B%E4%BA%8C/"/>
+    <url>/zy-yang.github.io/2023/02/23/%E6%9D%82%E7%AB%A0%E4%B9%8B%E4%BA%8C/</url>
+    
+    <content type="html"><![CDATA[<p>似乎每到这个时候都会想起一些事情。晚课摸鱼的时候翻到了过去的推送，看着那些封存在记忆里的东西很有意思，然而心底又莫名升起一种伤感。可惜我们回不到过去的 good old days 了。或许长大确实不是一件好事，但我们都得学会。</p><p>时间向前走，没有尽头只有路口。</p><p>那些在我生命中留下痕迹的人都去哪了呢，有时候真想把他们聚在一起好好聊一聊呢。</p><p>十八の次が十九で、十九の次が十八、――それならわかる。でも彼女は二十歳になった。そして秋には僕も二十歳になるのだ。死者だけがいつまでも十七歳だった</p><p>二十岁，可是二十岁究竟意味着什么呢？更成熟还是更痛苦？</p><p>大人になったからだよ</p><p> Because I’m an adult.</p><p> 我们只不过是时间的子民罢了。</p><p> 人无法同时拥有青春和对青春的切身感受</p><p> 当时只道是寻常</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>日记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>大二上总结</title>
+    <link href="/zy-yang.github.io/2023/02/16/%E5%A4%A7%E4%BA%8C%E4%B8%8B%E6%80%BB%E7%BB%93/"/>
+    <url>/zy-yang.github.io/2023/02/16/%E5%A4%A7%E4%BA%8C%E4%B8%8B%E6%80%BB%E7%BB%93/</url>
+    
+    <content type="html"><![CDATA[<p>讲道理，大二上过其实还算可以，尽管我在期中考试获得了两个不及格，大物和抽代。大物这学期开始二战，抽代的话，随缘吧，zmx老师真的很好，只是我没认真学。我在2月的尾巴写下了这篇回忆，对我而言，希望自己能越过越好吧。</p><p>就目前而言，$ \dfrac{\mathrm{dGPA}}{\mathrm{d}t}&gt;0 $, 希望我能继续保持下去…</p><h2 id="概率论和数理统计-A"><a href="#概率论和数理统计-A" class="headerlink" title="概率论和数理统计 A-"></a>概率论和数理统计 A-</h2><p>我以为会是A以上，还是高估了自己啊。写了一篇关于Buffon 投针的小文章，梳理了一些问题推广，最后简单介绍了Crofton定理，这一积分几何里的重要定理。大概是期末考试没考好吧…</p><p>叶俊老师讲课很好，给分很好(大概？)，考试难度还行…</p><h2 id="马克思主义原理-A-90"><a href="#马克思主义原理-A-90" class="headerlink" title="马克思主义原理 A- 90"></a>马克思主义原理 A- 90</h2><p>王峰明老师手下留情，直接获得A-。妙哉…</p><p>题目是一个史纲题：结合课堂讲解，运用马克思主义基本原理分析近代中国从“洋务运动”到“戊戌变法”再到“五四新文化运动”的历史变迁过程。大体上从生产力和生产关系这两者之间的匹配问题去谈就可以了。</p><h2 id="物理实验-A-90"><a href="#物理实验-A-90" class="headerlink" title="物理实验 A 90"></a>物理实验 A 90</h2><p>用Latex打的报告，似乎给分还行，踩线拿的A。</p><h2 id="形势与政策-A-90"><a href="#形势与政策-A-90" class="headerlink" title="形势与政策 A- 90"></a>形势与政策 A- 90</h2><p>林毅，老师有点左，上课举例子很多，听课的话看例子就好。</p><h2 id="高技术战争-A"><a href="#高技术战争-A" class="headerlink" title="高技术战争 A-"></a>高技术战争 A-</h2><p>老师很有激情</p><h2 id="高等电路分析-B-84"><a href="#高等电路分析-B-84" class="headerlink" title="高等电路分析 B+ 84"></a>高等电路分析 B+ 84</h2><p>zgp，平易近人，讲课还行，只能说自己学不明白…</p><h2 id="模拟电子技术基础-B-83"><a href="#模拟电子技术基础-B-83" class="headerlink" title="模拟电子技术基础 B 83"></a>模拟电子技术基础 B 83</h2><p>大约还是自己学不明白吧，感觉期末胜券在握，结果还是这个分数，sigh…</p><p>写到这里，好像也没什么可以写的了，我的人生好像一如既往的平淡，没有play hard 也没有 study hard.自己学数学的计划因为抽代考试被打击了，现在重新开始。我仍然不知道自己想要什么，去国外？改行？</p><p>我想，试试统计，下学期旁听一点统计的课，如果可以的话就改行罢，电机不是我想要的。</p><p>逛知乎的时候看到了这样一张图片，我想我们还是应当对自己今后的人生满怀信心的，毕竟你不知道什么时候就是你人生的转折点。<br><img src="/zy-yang.github.io/2023/02/16/%E5%A4%A7%E4%BA%8C%E4%B8%8B%E6%80%BB%E7%BB%93/a.jpeg" alt="&quot;New Year, new me&quot;"></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>日记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>数理统计2</title>
+    <link href="/zy-yang.github.io/2022/12/22/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A12/"/>
+    <url>/zy-yang.github.io/2022/12/22/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A12/</url>
+    
+    <content type="html"><![CDATA[<p>不说了，今天总结几个估计，矩估计(MOM)，最大似然估计(MLE),无偏估计和UMVUE</p><h2 id="矩估计"><a href="#矩估计" class="headerlink" title="矩估计"></a>矩估计</h2><p>矩估计是利用样本的k阶矩来估计参数，由于样本均值是样本k阶矩的无偏估计，一般就直接这么写了。样本矩是总体矩的相合估计量，这是本质。</p><p>简单来说，先求出样本总体的k阶矩，解方程组就能得到参数的矩估计。</p><h2 id="最大似然估计"><a href="#最大似然估计" class="headerlink" title="最大似然估计"></a>最大似然估计</h2><p>要点是求出似然函数，这里分两类：离散和连续</p><ol><li>连续版本<br>连续很好求，你先获得 $ p(x, \theta) $, 接着把他们乘在一起<br>即 $$ L(X, \theta)=\Pi_{i=1}^{n}p(x_i, \theta) $$<br>最后再令<br>$$\frac{\partial log L(X,\theta )}{\partial \theta}=0$$即可</li><li>离散版本<br>离散稍微麻烦一些，仍然是先求出 $ p(x, \theta) $。需要注意的是满足条件的 $ p(x, \theta) $ 并不唯一。<br>之后的步骤和前面一样。</li></ol><p>值得注意的是，有时候似然函数是严格单调函数，这时候需要考虑支撑集，利用支撑集的范围求出 MLE , 一般是顺序统计量。</p><h2 id="UMVUE"><a href="#UMVUE" class="headerlink" title="UMVUE"></a>UMVUE</h2><p>UMVUE 的求法主要是利用 L-S 定理和 C-R 不等式，这两者都需要用到<strong>完备统计量</strong>的概念，而完备统计量又和<strong>分布族</strong>相关，</p><p>我们称一个统计量是完备的，如果它服从的分布是一个完备分布。常见的完备分布从属于指数分布族，一般有幂分布、指数分布、正态分布、二项分布(两点分布)、泊松分布、Gamma分布</p><p>拥有完备统计量的概念，我们只需要先找出完备统计量，此时也一般是充分统计量，也即</p><ol><li>先利用 MOM 和 MLE 找到一个充分统计量，要求是无偏的(非无偏的可以修正)</li><li>再判断这个充分统计量服从的分布是不是完备分布<ol><li>求统计量的期望，纠偏</li><li>L-S，求条件期望，构造构造示性函数作为无偏估计量</li></ol></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>笔记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>概率论和数理统计</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>清华园日记1</title>
+    <link href="/zy-yang.github.io/2022/12/05/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B01/"/>
+    <url>/zy-yang.github.io/2022/12/05/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B01/</url>
+    
+    <content type="html"><![CDATA[<h2 id="清华园日记-·-其一"><a href="#清华园日记-·-其一" class="headerlink" title="清华园日记 · 其一"></a>清华园日记 · 其一</h2><p>现在是12月的第一个周一，模电的AD转换还没分析出来，作业也还没开始，好在明天还有时间。疫情最初是从校外家属区开始的，之后是南区和紫11，再后来蔓延到紫1<br>如今已经到了紫1的6层，距离我也不过是几十米的路。频繁的封控，催促，加之感冒和口腔溃疡，的确有些难以忍受。可那又如何呢，疫情面前，学校确实也付出了很多，零食大礼包，送餐，免费的食堂，这些东西摆在面前，谁也没法说他不好。是啊，那到底是什么不好呢？</p><p>不管这些了，我仍然有很多事情没有完成，寒假想学一些技术，参加了一个挑战杯，还想学数学。但 GPA 呢？残酷冰冷地横在我面前，我仍然需要面对这一事实，绩点的竞争又随着PF政策的落地越发残酷，可我仍要前行，又或许那已经不再重要了。</p><p>今天听到一首很好听的歌, 赵雷的&lt;少年锦时&gt;, 最初是因为&lt;画&gt;喜欢上赵雷，之后听了&lt;南方姑娘&gt;和&lt;理想&gt;，越发觉得赵雷这个人很有味道, 和朴树一样呢。</p><p>P.S.模电变难了，呜呜</p><h3 id="12-10"><a href="#12-10" class="headerlink" title="12.10"></a>12.10</h3><p>今天阳了，心也忽然静下来了，尽管吃了泰诺头还是很晕，但能集中精力做一点事情了，挺奇怪的。之前的恐惧、担心化作现实之后是洒脱，不顾一切了，很有意思。<br>我不知道今后会怎样，我只知道现在如何。</p><p>今天还读到一篇文章《孟婆茶》，很棒的文字：<br><strong>从知道得病至今我一直坦然和平静，我总是想，人不能只允许自己遇到好事，不允许自己遇到坏事，当不顺或困境找到我时，我会反问自己：’为什么不可以是我？’于是就能平静地去面对</strong></p><p>我想，不论如何，这都是支持我走下去的力量吧。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>杂章散书</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>碎碎念</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>拉普拉斯变换</title>
+    <link href="/zy-yang.github.io/2022/12/04/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2/"/>
+    <url>/zy-yang.github.io/2022/12/04/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2/</url>
+    
+    <content type="html"><![CDATA[<!---more---><h2 id="拉普拉斯变换及反变换"><a href="#拉普拉斯变换及反变换" class="headerlink" title="拉普拉斯变换及反变换"></a>拉普拉斯变换及反变换</h2><ol><li><strong>Fourier transformation</strong> 傅里叶变换的定义如下 $$ f(t)=\sum_{n=0}^{\infty}c_ke^{-j\omega_0kt} $$,<br>其中<br> $$ c_k=\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)e^{-jk\omega_0t}dt $$</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>笔记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>电路</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>概率论2——正态分布的性质总结</title>
+    <link href="/zy-yang.github.io/2022/12/03/%E6%A6%82%E7%8E%87%E8%AE%BA2%E2%80%94%E2%80%94%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83%E7%9A%84%E5%BA%94%E7%94%A8/"/>
+    <url>/zy-yang.github.io/2022/12/03/%E6%A6%82%E7%8E%87%E8%AE%BA2%E2%80%94%E2%80%94%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83%E7%9A%84%E5%BA%94%E7%94%A8/</url>
+    
+    <content type="html"><![CDATA[<h2 id="一维正态分布"><a href="#一维正态分布" class="headerlink" title="一维正态分布"></a>一维正态分布</h2><span id="more"></span><ol><li>表示为 $N( \mu $, $ \sigma^2 )$, $ p(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}} $</li><li>$ P(X &lt; x)=\Phi(x) $, $P(|X| &lt; x)=2( \Phi(x)- \frac{1}{2} )=2 \Phi(x)-1$;</li><li>若$  X, Y  $ 独立, 那么 $ X\sim N(\mu_1, \sigma_1^2)\quad Y\sim N(\mu_2, \sigma_2^2) $, 则<br>$$ X+Y\sim N(\mu_1+\mu_2, \sigma_1^2+\sigma_2^2)$$$$X-Y\sim N(\mu_1-\mu_2, \sigma_1^2-\sigma_2^2)$$</li><li>若 $ X\sim N(\mu, \sigma^2) $, 那么 $ X^2 $ 服从 $ \chi^2 $分布。</li></ol><h2 id="二维正态分布"><a href="#二维正态分布" class="headerlink" title="二维正态分布"></a>二维正态分布</h2><ol><li>表示为 $ N(\mu_1,\mu_2,\sigma_1^2,\sigma_2^2, \rho)$ </li><li>$ p(x)=\frac{1}{2\pi\sigma_1\sigma_2\sqrt{1-\rho^2}}e^{-\frac{1}{2(1-\rho^2)}(\frac{(x-\mu_1)^2}{\sigma_1^2}-2\rho\frac{(x-\mu_1)(y-\mu_2)}{\sigma_1^2\sigma_2^2}+\frac{(y-\mu_2)^2}{\sigma_2^2})}$</li><li>$$\begin{align}<br>E(X_2|x_1)=\mu_2+\rho\sigma_2 \frac{x_1-\mu_1}{\sigma_1}\\<br>Var(X_2|x_1)=(1-\rho^2)\sigma_2<br>\end{align}$$</li><li>设若两随机变量服从正态分布，且相关系数为 $ \rho $, 那么$$ aX+bY+c \sim N(a\mu_1+b\mu_2+c, a^2\sigma_1^2+b^2\sigma_2^2+ 2ab\rho\sigma_1\sigma_2) $$</li></ol>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>概率论</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>回顾函数发生器</title>
+    <link href="/zy-yang.github.io/2022/12/03/post2/"/>
+    <url>/zy-yang.github.io/2022/12/03/post2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="我们有哪些工具可以用？"><a href="#我们有哪些工具可以用？" class="headerlink" title="我们有哪些工具可以用？"></a>我们有哪些工具可以用？</h2><ol><li><p>__电压比较器__：一般、过零比较器、滞回比较器、窗口比较器</p></li><li><p><strong>各种运算电路</strong></p><span id="more"></span><h2 id="矩形波发生器"><a href="#矩形波发生器" class="headerlink" title="矩形波发生器"></a>矩形波发生器</h2></li><li><p>矩形波的特点是方形，那么需要电压比较器，但是单纯的电压比较器不能产生持续不断的波形，这时候需要 <strong>反馈</strong> 来驱动。值得注意的是，负反馈在这个电路中起到了触发的作用，也就是说，将发生的信号重新作为输入信号触发电压比较器，如此循环往复。除此之外，我们还需要延时，这一点，<strong>积分电路</strong> 可以做到。这时候我们要问各个电阻的作用是什么? $ R_1、R_2、R_4 $ 构成滞回比较器，而 $ R_3 $ 构成负反馈通道.</p></li><li><p><strong>波形</strong> 波形差强人意，这时候需要分析以下电压关系，除开比较器(那就是个输出两个量 $ \pm U_z $ 的东西), 看 RC 回路就知道这是个一阶电路，分析一个周期就可以得到如下的关系：<br>$$U_z=(U_z+U_T)\left (1-e^{-\frac{T/2}{R_3C}}\right )-U_T $$<br>由此 $ T=2R_3Cln(1+\frac{2R_1}{R_2})$</p></li></ol><h2 id="三角波发生"><a href="#三角波发生" class="headerlink" title="三角波发生"></a>三角波发生</h2><ol><li>有了矩形波，三角波就容易了，只需要积一次分就好，这里可以将两个延时回路合成一个，即从输出端引反馈到输入端，注意反馈回路连在 __正输入端__。</li></ol><h2 id="锯齿波"><a href="#锯齿波" class="headerlink" title="锯齿波"></a>锯齿波</h2><ol><li>锯齿波只要改变积分的时间就好，具体和改变占空比的操作一致。</li><li></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>笔记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>函数发生器</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Lecture 1:磁路</title>
+    <link href="/zy-yang.github.io/2022/12/02/post/"/>
+    <url>/zy-yang.github.io/2022/12/02/post/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-磁路定理"><a href="#1-磁路定理" class="headerlink" title="1.磁路定理"></a>1.磁路定理</h2><p>$$\begin{align}<br>\int H \mathrm{d} l&amp;=WI\\<br>\sum\Phi &amp;=0\\<br>\Phi &amp;=BS\\<br>WI=\sum U_m &amp;=\sum H l=\sum R_m\times \Phi\\<br>R_m &amp;=\frac{l}{\mu S}<br>\end{align}$$<br>单位分别为</p><span id="more"></span><ol><li><p>$H$ $A \cdot m^{-1}$</p></li><li><p>$U$ $A$</p></li><li><p>$R_m$ $H$</p></li><li><p>$\Phi$  $T\cdot m^2$</p></li><li><p>$\mu$ $(H\cdot m)^{-1}$</p></li></ol><h2 id="2-磁化曲线"><a href="#2-磁化曲线" class="headerlink" title="2. 磁化曲线"></a>2. 磁化曲线</h2><ol><li><p>铁磁材料的种类可分为软磁和硬磁。</p><ol><li>软磁材料的磁化曲线包络面积小，矫顽磁力低($ H_c&lt;100 $ )，磁阻低，剩磁低(都可以从磁化曲线上读出来)</li><li>硬磁材料则相反。</li></ol></li><li><p>基本磁化曲线</p><ol><li>连接各磁滞回线的顶点可以得到</li></ol></li></ol><h2 id="3-磁损和铁损和铜损"><a href="#3-磁损和铁损和铜损" class="headerlink" title="3. 磁损和铁损和铜损"></a>3. 磁损和铁损和铜损</h2><ol><li>磁损：铁磁物质在交变磁化时出现的功率损失</li><li>涡流损失：交变电流穿过大块磁体时产生涡电流<ol><li>可以通过减小电导率或者用硅钢片堆叠减小涡流损失；</li><li>频率越高，涡流损失越严重</li></ol></li><li>铜损：线圈内阻损耗</li><li>铁损：涡流损耗和磁滞损耗；影响因素：工作频率、磁导率、磁感应强度</li></ol><h2 id="4-铁芯线圈的等效电路"><a href="#4-铁芯线圈的等效电路" class="headerlink" title="4. 铁芯线圈的等效电路"></a>4. 铁芯线圈的等效电路</h2><ol><li>非线性电感：仅考虑铁芯的磁饱和；电压越高，感抗越小。</li><li>非线性电阻和非线性电纳：考虑损耗和磁饱和$G_0$和$jB_0$并联，其中参数$G_0,B_0$随电压U变化。</li><li>线性电感：漏磁通</li><li>电阻：铜损</li></ol><h2 id="Lecture-2-网络图论"><a href="#Lecture-2-网络图论" class="headerlink" title="Lecture 2. 网络图论"></a>Lecture 2. 网络图论</h2><h2 id="1-节点、连支、回路、割集、树"><a href="#1-节点、连支、回路、割集、树" class="headerlink" title="1. 节点、连支、回路、割集、树"></a>1. 节点、连支、回路、割集、树</h2><ol><li><p>回路：从一个节点出发经过一些支路最终回到节点</p></li><li><p>树：满足以下几个条件：</p><ol><li>连接所有节点</li><li>不包含回路</li><li>连通图</li><li>最少的支路</li></ol></li><li><p>连支：对于给定的树，图上不属于该树的其他支路统称连支。</p></li><li><p>割集：将一个图划分为两个不相通的部分所需要移除的最少的支路。——广义节点</p></li></ol><p>性质：树支数bt=n-1;连支数bf=b-n+1;<br>一般的，找割集先看节点，后看树。</p><h2 id="2-各种矩阵"><a href="#2-各种矩阵" class="headerlink" title="2. 各种矩阵"></a>2. 各种矩阵</h2><ol><li><p>节点支路矩阵$A$——反映了图的所有信息</p><ol><li>形式：依赖于节点数和节点相关的支路；可以看成最直接的<strong>KCL</strong></li><li>对于给定的节点，先规定支路方向，流出节点为1，流入为-1，无关为0；最后需要删除一行</li><li>KCL方程：Ai=0;KVL：$u=A^{T}u_n$, $u_n$为节点电压向量。</li></ol></li><li><p>回路矩阵——回路电流法</p><ol><li>形式：先确定一个树，再从连支出发，选取单连支回路，看树支的方向，与连支相同记为1，相反记为-1，无关为0.——<strong>回路电流方程</strong></li><li>特点：先树支后连支，形式为$B_f=[B_t\quad I]$;所有支路电压可以用树支电压表示</li><li>KVL方程：$B_f\cdot u=0$</li></ol></li><li><p>基本割集矩阵</p><ol><li>形式：仍然从树出发，构造单树支割集，一般先找节点。割集数不定，总共n-1个。和树支方向相同的连支取1，相反取-1，无关为0；</li><li>特点：先树支后连支，形式为$Q_f=[I\quad Q_t]$;</li><li>KCL:$Q_f\cdot i=0$</li><li>$B_t \space and \space Q_t$ 的关系<br>   $$B_t=-Q_t^{T}$$</li></ol></li><li><p>节点法和回路法</p><ol><li><p>典型支路</p><ol><li>$U_s=[…]^{T}$</li><li>$Z=diag[…]$</li><li>$I_s=[…]^{T}$</li><li>规则时每一个阻抗算作一个支路，电压源和电流源算并联和串联。方向和给定方向相同时取-，相反取+。</li></ol></li><li><p>节点法——对应 U</p><ol><li>$AYA^T U_n=AI_s-AYU_s$</li><li>$Ai=0$</li><li>$U=A^TU_n$</li><li>$Ai=0$</li><li>只能解决压控电流源。在导纳阵Y中第k行第j列加入$g_{kj}$, 表示第k个支路上的电流受第j条支路上的电压控制</li></ol></li><li><p>割集法——对应 U</p><ol><li>$Q_fYQ_f^{T}U_t=Q_fI_s-Q_fYU_s$</li><li>$U=Q^TU_t$</li><li>$Q_fI=0$</li><li>可以解决</li></ol></li><li><p>回路法——对应 I</p><ol><li>$BZB^{T}I=BU_s-BZI_s$</li></ol></li><li><p>注意事项</p><ol><li>写导纳阵的时候先把阻抗阵写出来，注意互感的时候L1,L2的位置变化，以及互感M的符号为负。此外，压控电流源的控制量$g_{kj}$即受控源在第k路，第j路的电压控制，写导纳阵的时候把$g_{kj}$写在k行j列。流控电压源相反$g_{kj}$写在j行k列.</li></ol></li></ol></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>笔记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>circuit</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>大数定律和中心极限定律</title>
+    <link href="/zy-yang.github.io/2022/12/02/My-New-Post/"/>
+    <url>/zy-yang.github.io/2022/12/02/My-New-Post/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-何谓依概率收敛"><a href="#1-何谓依概率收敛" class="headerlink" title="1. 何谓依概率收敛"></a>1. 何谓依概率收敛</h2><span id="more"></span><h3 id="1-定义"><a href="#1-定义" class="headerlink" title="1. 定义"></a>1. 定义</h3><p>$$P(|X-C|&lt;\varepsilon )\to 1$$收敛速度与 $\varepsilon$ 有关</p><h3 id="2-性质"><a href="#2-性质" class="headerlink" title="2. 性质"></a>2. 性质</h3><ol><li><p>区别于 almost surely 收敛(几乎处处收敛)，<br>$$P(X_n \to X)\to 1$$<br>此处所说的$a.s.$收敛需要$|X_n-X|$的取值均在$\varepsilon$内，除开一个零测度集，而依概率收敛则可以满足上述随机变量的一些取值(取值构成一个任意小的测度集)不在$\varepsilon$内，这也就说明了为什么不直接将频率定义为概率。</p></li><li><p>此外还有依分布收敛，和上面所说的两个收敛的关系(由强到弱)<br>$$a.s.\Longrightarrow P\Longrightarrow  L$$<br>依分布收敛指的是随机变量$X_n$的分布同$X$，若$n\to \infty$.这等价于特征函数<br>$$\varphi_{X_n}(\theta)=\varphi_{X}(\theta),\quad n\to \infty$$<br>当收敛到常数的时候，依概率收敛和依分布收敛等价，否则只能前者推后者。</p></li><li><p><strong>(Slusky’s Theorem)</strong> 若 $X_{n} \stackrel{D}{\longrightarrow} X, Y_{n} \stackrel{P}{\longrightarrow} a$ ,则 $X_{n}+Y_{n} \stackrel{D}{\longrightarrow} X+a$</p></li></ol><h2 id="大数定律"><a href="#大数定律" class="headerlink" title="大数定律"></a>大数定律</h2><h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>称一个随机变量服从大数定律，若其满足如下的性质：<br>   $$\lim_{n\to \infty}P{|\frac{1}{n}\sum_{k=1}^{n}\xi_k-\frac{1}{n}\sum_{k=1}^{n}E\xi_k|&lt;\varepsilon }=1$$</p><h3 id="各种条件"><a href="#各种条件" class="headerlink" title="各种条件"></a>各种条件</h3><h4 id="切比雪夫大数定律"><a href="#切比雪夫大数定律" class="headerlink" title="切比雪夫大数定律"></a>切比雪夫大数定律</h4><ol><li><p>条件：$\xi_1\cdots \xi_n$ 两两不相关，且方差一致有界。</p></li><li><p>引理：切比雪夫不等式：</p><ol><li>若随机变量$X$有二阶矩，那么如下关系成立<br>$$P{|X-c|&gt;\varepsilon}\le \frac{DX}{\varepsilon^2}$$</li></ol></li></ol><h4 id="辛钦大数定律"><a href="#辛钦大数定律" class="headerlink" title="辛钦大数定律"></a>辛钦大数定律</h4><ol><li><p>条件：要求 $\xi_1\cdots \xi_n$ 独立同分布且 $E\xi_i$ 有限，则 $$\lim_{n\to \infty}P{|\frac{1}{n}\sum_{k=1}^{n}\xi_k-E\xi|&lt;\varepsilon }=1$$</p></li><li><p>此结论要比切比雪夫定律来得稍微好一点，容易使用…</p></li><li><p><strong>推论: (Bernoulli 大数定律)</strong> 在事件 A 发生的概率为 p 的 n 次重复独立试验的 Bernoulli 概型中，令 $\mu_n$ 为 n 次重复中试验 A 发生的次数, 有 $\frac{\mu_n}{n}\stackrel{P}{\longrightarrow} \mu$</p></li></ol><h4 id="Markov-条件"><a href="#Markov-条件" class="headerlink" title="Markov 条件"></a>Markov 条件</h4><p>如果一个随机变量满足 $\frac{1}{n^2}\sum_{k=1}^nDX_k\to 0$ ，那么他服从大数定律</p><h3 id="中心极限定理"><a href="#中心极限定理" class="headerlink" title="中心极限定理"></a>中心极限定理</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p> 对于任意 $X_n$, 我们有<br> $$\lim <em>{n \rightarrow \infty} P\left(\frac{\sum</em>{i=1}^{n} X_{i}-\sum_{i=1}^{n} E X_{i}}{\sqrt{D\left(\sum_{i=1}^{n} X_{i}\right)}}&lt;x\right)=\Phi(x) \quad \forall x \in R$$</p><p> 换句话说，就是<br> $$\frac{\sum_{i=1}^{n} X_{i}-\sum_{i=1}^{n} E X_{i}}{\sqrt{D\left(\sum_{i=1}^{n} X_{i}\right)}}\stackrel{D}{\longrightarrow} N(0,1) $$<br> 即当 $n\to \infty$ 时，$\sum_{n=1}^{\infty}X_n\to N(0,1) $</p><h4 id="各类定理"><a href="#各类定理" class="headerlink" title="各类定理"></a>各类定理</h4><ol><li><p><strong>(Levy-Lindeberg)</strong>  $X_i$ 独立同分布，且有有限的期望 $EX_i=\mu$ 和方差 $DX_i=\sigma^2$. 那么 $$\frac{\sum_{i=1}^{n} X_{i}-n\mu}{\sqrt{n}\sigma}\stackrel{D}{\longrightarrow} N(0,1)$$</p></li><li><p>用于独立和的近似计算，比如二项分布的和等等.</p></li><li><p><strong>(De Mover and Laplace)</strong> 二项分布的正态逼近：记 $\mu$ 为n 次试验中事件 A 出现的次数,<br>则 $$Y^{*}<em>n=\frac{\mu-np}{\sqrt{np(1-p)}}\stackrel{D}{\longrightarrow} N(0,1)$$<br>则 $$\lim</em>{n \rightarrow+\infty}P\left(Y_{n}^{*}\leqslant y\right)=\Phi(y)=\frac{1}{\sqrt{2 \pi}}\int_{-\infty}^{y}\mathrm{e}^{-\frac{t^{2}}{2}}\mathrm{~d}t\approx m$$</p></li></ol><p>可用于计算如下三类问题：</p><ol><li>已知 n, y, 求 m;</li><li>已知 n, m, 求 y;</li><li>已知 y, m, 求 n;</li></ol><h4 id="分析工具包"><a href="#分析工具包" class="headerlink" title="分析工具包"></a>分析工具包</h4><h5 id="1-Chebyshev-inequality"><a href="#1-Chebyshev-inequality" class="headerlink" title="1. Chebyshev inequality"></a>1. Chebyshev inequality</h5><p>若随机变量$X$有二阶矩，那么如下关系成立<br>$$P{|X-c|&gt;\varepsilon}\le \frac{DX}{\varepsilon^2}$$</p><p>用于证明一些随机变量依概率收敛，比如以下独立同分布下的结果<br>$$\begin{align}<br>\frac{1}{n}\sum_{k=1}^{n}X_{i}&amp;\stackrel{P}{\longrightarrow} EX\quad (KrinChin’\space theorem)\\<br>\frac{1}{n}\sum_{k=1}^{n}X^2_{i}&amp;\stackrel{P}{\longrightarrow} DX\quad(前提是DX存在)<br>\end{align}$$</p><ol><li><strong>Corollary</strong></li></ol><p>若随机变量$X$有二阶矩，且期望为0。那么如下关系成立<br>$$P{X\ge a}\le \frac{a^2}{a^2+\sigma^2}$$</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>数学笔记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>概率论</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
