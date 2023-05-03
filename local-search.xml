@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>WhatCanIHoldWithYou</title>
+    <link href="/zy-yang.github.io/2023/05/03/WhatCanIHoldWithYou/"/>
+    <url>/zy-yang.github.io/2023/05/03/WhatCanIHoldWithYou/</url>
+    
+    <content type="html"><![CDATA[<p>What can I hold you with?</p><p>还能用什么留住你呢？</p><p>I offer you lean streets, desperate sunsets, the moon of the jagged suburbs.</p><p>我予你枯寂的街道，失落的黄昏，和残缺的月。</p><p>I offer you the bitterness of a man who has lookedlong and long at the lonely moon.</p><p>我予你我那脉脉渴望孤月的苦涩。</p><p>I offer you my ancestors, my dead men, the ghosts<br>that living men have honoured in bronze:</p><p>我予你我逝去的先祖，他的灵魂被后人以石碑铭记。</p><p>my father’s father killed in the frontier of<br>Buenos Aires, two bullets through his lungs,bearded and dead, wrapped by his soldiers in<br>the hide of a cow;</p><p>我祖父战死在布宜诺斯艾利斯的边境，两颗子弹穿过他的肺。他蓄着胡子死了，他的尸体被士兵用牛皮包裹；</p><p> my mother’s grandfather<br>–just twentyfour– heading a charge of<br>three hundred men in Peru, now ghosts on<br>vanished horses.</p><p>我的外祖父，那时只有24岁，在秘鲁率领三百将士冲锋陷阵，如今灵魂消失于萧萧马鸣间。</p><p>I offer you whatever insight my books may hold,<br>whatever manliness or humour my life.</p><p>我予你我的书中所有的深刻洞见，我生命中所有的刚毅坚卓和幽默风趣。</p><p>I offer you the loyalty of a man who has never<br>been loyal.</p><p>我予你我的全然的忠诚纵使我从未获得。</p><p>I offer you that kernel of myself that I have saved,<br>somehow –the central heart that deals not<br>in words, traffics not with dreams, and is<br>untouched by time, by joy, by adversities.</p><p>我予你我所尽力存留的最柔软的内心。不知为何，这内心无法以言语表达，从未被时间，被欢乐，或被苦难染指。</p><p>I offer you the memory of a yellow rose seen at<br>sunset, years before you were born.</p><p>我予你落日下玫瑰上余晖的记忆，那时是你还未出生的遥远年岁。</p><p>I offer you explanations of yourself, theories about<br>yourself, authentic and surprising news of<br>yourself.</p><p>我予你你的表达，你的理论，你的真实而令人惊奇的消息。</p><p>I can give you my loneliness, my darkness, the<br>hunger of my heart; I am trying to bribe you<br>with uncertainty, with danger, with defeat.</p><p>我可以给你我的孤独，我的黑暗，我内心的饥渴；我试图用困惑，用危险和挫败来打动你。</p><ul><li>Jorge Luis Borges</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>翻译作品</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Poem</tag>
+      
+      <tag>Translation</tag>
+      
+      <tag>Borges</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>LeFestin</title>
     <link href="/zy-yang.github.io/2023/05/03/LeFestin/"/>
     <url>/zy-yang.github.io/2023/05/03/LeFestin/</url>
@@ -122,8 +151,14 @@
     <link href="/zy-yang.github.io/2023/03/22/Principle/"/>
     <url>/zy-yang.github.io/2023/03/22/Principle/</url>
     
-    <content type="html"><![CDATA[<h3 id="定理陈述"><a href="#定理陈述" class="headerlink" title="定理陈述"></a>定理陈述</h3><p>Stein的复分析 Chapter 3 Exercise 16的第二问用到了这个结论。<br>广义幅角原理指的是<br>$$<br>\frac{1}{2 \pi i} \oint_{C} g(z) \frac{f^{\prime}(z)}{f(z)} d z=\sum_{a} n(C, a) g(a)-\sum_{b} n(C, b) g(b)<br>$$<br>例如，如果 $f$ 是以一个简单围道 $C$ 内部 $z_1 ， \ldots, z_p$ 为零点的多项式，以及 $g(z)=z^k$ ，则<br>$$<br>\frac{1}{2 \pi i} \oint_C z^k \frac{f^{\prime}(z)}{f(z)} d z=z_1^k+z_2^k+\cdots+z_p^k<br>$$<br>是 $ f $ 的根的次方和对称多项式。</p><h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>考虑<br>$$<br>f(z)=\frac{\prod_{j=1}^n\left(z-z_j\right)}{\prod_{k=1}^m\left(z-p_k\right)} h(z)<br>$$<br>其中h是全纯函数，求对数导数有<br>$$<br>\frac{f^{\prime}(z)}{f(z)}=\sum_{j=1}^n \frac{1}{z-z_j}-\sum_{k=1}^m \frac{1}{z-p_k}+\frac{h^{\prime}(z)}{h(z)}<br>$$<br>乘上$ g(z) $ 后<br>$$<br>\begin{aligned}<br>g(z) \frac{f^{\prime}(z)}{f(z)}=&amp;\sum_{j=1}^n \frac{g(z)}{z-z_j}-\sum_{k=1}^m \frac{g(z)}{z-p_k}+g(z) \frac{h^{\prime}(z)}{h(z)} \<br>=&amp; \sum_{j=1}^n \frac{g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g\left(p_k\right)}{z-p_k}+\left(g(z) \frac{h^{\prime}(z)}{h(z)}+\sum_{j=1}^n \frac{g(z)-g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g(z)-g\left(p_k\right)}{z-p_k}\right)\<br>\end{aligned}<br>$$<br>括号里的项只有可去奇点，则<br>$$<br>g(z) \frac{f^{\prime}(z)}{f(z)}=\sum_{j=1}^n \frac{g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g\left(p_k\right)}{z-p_k}+\phi(z)<br>$$<br>其中$ \phi(z) $ 为全纯函数。</p><p>对上式apply Residue Theorem即得。</p><h3 id="Geometric-Picture-of-Argument-Principle"><a href="#Geometric-Picture-of-Argument-Principle" class="headerlink" title="Geometric Picture of Argument Principle"></a>Geometric Picture of Argument Principle</h3><p> 关于幅角原理，我们从另一个角度看，取一个区域 $ \Omega $, 如果 $ f(z)=p $ 在这个区域上有零点，考虑 $ g(z)=f(z)-p $ 的零点数，即 $$<br>     N(f(z)-p,\Omega)=\frac{1}{2\pi i}\int_{\partial \Omega}\mathrm{d} log(f(z)-p)=\frac{1}{2\pi }\int_{\partial \Omega}\mathrm{d} arg(log(f(z)-p))<br> $$<br> 这就是f(z)环绕p的环绕数。如图所示</p><p><img src="/zy-yang.github.io/2023/03/22/Principle/A.png" alt="&quot;A-geometrical-interpretation-of-the-Argument-Principle&quot;"></p><p>关于复分析里的习题，</p><ol><li> Suppose $f$ and $g$ are holomorphic in a region containing the disc $|z| \leq 1$. Suppose that $f$ has a simple zero at $z=0$ and vanishes nowhere else in $|z| \leq 1$. Let<br>$$<br>f_\epsilon(z)=f(z)+\epsilon g(z)<br>$$<br>Show that if $\epsilon$ is sufficiently small, then<br>(a) $f_\epsilon(z)$ has a unique zero in $|z| \leq 1$, and 16. Suppose $f$ and $g$ are ho Suppose that $f$ has a simple Let<br>(b) if $z_\epsilon$ is this zero, the mapping $\epsilon \mapsto z_\epsilon$ is continuous.</li></ol><p>第二问只需要利用 广义幅角原理的推论即可证明。</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="定理陈述"><a href="#定理陈述" class="headerlink" title="定理陈述"></a>定理陈述</h3><p>Stein的复分析 Chapter 3 Exercise 16的第二问用到了这个结论。<br>广义幅角原理指的是<br>$$<br>\frac{1}{2 \pi i} \oint_{C} g(z) \frac{f^{\prime}(z)}{f(z)} d z=\sum_{a} n(C, a) g(a)-\sum_{b} n(C, b) g(b)<br>$$<br>例如，如果 $f$ 是以一个简单围道 $C$ 内部 $z_1 ， \ldots, z_p$ 为零点的多项式，以及 $g(z)=z^k$ ，则<br>$$<br>\frac{1}{2 \pi i} \oint_C z^k \frac{f^{\prime}(z)}{f(z)} d z=z_1^k+z_2^k+\cdots+z_p^k<br>$$<br>是 $ f $ 的根的次方和对称多项式。</p><h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>考虑<br>$$<br>f(z)=\frac{\prod_{j=1}^n\left(z-z_j\right)}{\prod_{k=1}^m\left(z-p_k\right)} h(z)<br>$$<br>其中h是全纯函数，求对数导数有<br>$$<br>\frac{f^{\prime}(z)}{f(z)}=\sum_{j=1}^n \frac{1}{z-z_j}-\sum_{k=1}^m \frac{1}{z-p_k}+\frac{h^{\prime}(z)}{h(z)}<br>$$<br>乘上$ g(z) $ 后<br>$$<br>\begin{aligned}<br>g(z) \frac{f^{\prime}(z)}{f(z)}=&amp;\sum_{j=1}^n \frac{g(z)}{z-z_j}-\sum_{k=1}^m \frac{g(z)}{z-p_k}+g(z) \frac{h^{\prime}(z)}{h(z)} \<br>=&amp; \sum_{j=1}^n \frac{g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g\left(p_k\right)}{z-p_k}+\left(g(z) \frac{h^{\prime}(z)}{h(z)}+\sum_{j=1}^n \frac{g(z)-g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g(z)-g\left(p_k\right)}{z-p_k}\right)\<br>\end{aligned}<br>$$<br>括号里的项只有可去奇点，则<br>$$<br>g(z) \frac{f^{\prime}(z)}{f(z)}=\sum_{j=1}^n \frac{g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g\left(p_k\right)}{z-p_k}+\phi(z)<br>$$<br>其中$ \phi(z) $ 为全纯函数。</p><p>对上式apply Residue Theorem即得。</p><h3 id="Geometric-Picture-of-Argument-Principle"><a href="#Geometric-Picture-of-Argument-Principle" class="headerlink" title="Geometric Picture of Argument Principle"></a>Geometric Picture of Argument Principle</h3><p> 关于幅角原理，我们从另一个角度看，取一个区域 $ \Omega $, 如果 $ f(z)=p $ 在这个区域上有零点，考虑 $ g(z)=f(z)-p $ 的零点数，即 $$<br>     N(f(z)-p,\Omega)=\frac{1}{2\pi i}\int_{\partial \Omega}\mathrm{d} log(f(z)-p)=\frac{1}{2\pi }\int_{\partial \Omega}\mathrm{d} arg(log(f(z)-p))<br> $$<br> 这就是f(z)环绕p的环绕数。如图所示</p><p><img src="/zy-yang.github.io/2023/03/22/Principle/A.png" alt="&quot;A-geometrical-interpretation-of-the-Argument-Principle&quot;"></p><p>关于复分析里的习题，</p><ol><li>Suppose $f$ and $g$ are holomorphic in a region containing the disc $|z| \leq 1$. Suppose that $f$ has a simple zero at $z=0$ and vanishes nowhere else in $|z| \leq 1$. Let<br>$$<br>f_\epsilon(z)=f(z)+\epsilon g(z)<br>$$<br>Show that if $\epsilon$ is sufficiently small, then<br>(a) $f_\epsilon(z)$ has a unique zero in $|z| \leq 1$, and 16. Suppose $f$ and $g$ are ho Suppose that $f$ has a simple Let<br>(b) if $z_\epsilon$ is this zero, the mapping $\epsilon \mapsto z_\epsilon$ is continuous.</li></ol><p>第二问只需要利用 广义幅角原理的推论即可证明。</p>]]></content>
     
+    
+    <categories>
+      
+      <category>数学</category>
+      
+    </categories>
     
     
     <tags>

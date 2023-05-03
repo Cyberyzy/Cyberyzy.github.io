@@ -16,20 +16,20 @@
   <meta name="author" content="zy-yang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="定理陈述Stein的复分析 Chapter 3 Exercise 16的第二问用到了这个结论。广义幅角原理指的是$$\frac{1}{2 \pi i} \oint_{C} g(z) \frac{f^{\prime}(z)}{f(z)} d z&#x3D;\sum_{a} n(C, a) g(a)-\sum_{b} n(C, b) g(b)$$例如，如果 $f$ 是以一个简单围道 $C$ 内部 $z_1 ，">
+    <meta name="description" content="What can I hold you with? 还能用什么留住你呢？ I offer you lean streets, desperate sunsets, the moon of the jagged suburbs. 我予你枯寂的街道，失落的黄昏，和残缺的月。 I offer you the bitterness of a man who has lookedlong and long">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Generalized Argument Principle">
-<meta property="og:url" content="https://github.com/Cyberyzy/2023/03/22/Principle/index.html">
+<meta property="og:title" content="WhatCanIHoldWithYou">
+<meta property="og:url" content="https://github.com/Cyberyzy/2023/05/03/WhatCanIHoldWithYou/index.html">
 <meta property="og:site_name" content="Le blog de yzy">
-<meta property="og:description" content="定理陈述Stein的复分析 Chapter 3 Exercise 16的第二问用到了这个结论。广义幅角原理指的是$$\frac{1}{2 \pi i} \oint_{C} g(z) \frac{f^{\prime}(z)}{f(z)} d z&#x3D;\sum_{a} n(C, a) g(a)-\sum_{b} n(C, b) g(b)$$例如，如果 $f$ 是以一个简单围道 $C$ 内部 $z_1 ，">
+<meta property="og:description" content="What can I hold you with? 还能用什么留住你呢？ I offer you lean streets, desperate sunsets, the moon of the jagged suburbs. 我予你枯寂的街道，失落的黄昏，和残缺的月。 I offer you the bitterness of a man who has lookedlong and long">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://github.com/zy-yang.github.io/2023/03/22/Principle/A.png">
-<meta property="article:published_time" content="2023-03-22T02:18:35.000Z">
-<meta property="article:modified_time" content="2023-05-03T06:34:26.724Z">
+<meta property="article:published_time" content="2023-05-03T06:30:38.000Z">
+<meta property="article:modified_time" content="2023-05-03T06:33:21.493Z">
 <meta property="article:author" content="zy-yang">
-<meta property="article:tag" content="复分析">
+<meta property="article:tag" content="Poem">
+<meta property="article:tag" content="Translation">
+<meta property="article:tag" content="Borges">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://github.com/zy-yang.github.io/2023/03/22/Principle/A.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -37,7 +37,7 @@
   
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
   
-  <title>Generalized Argument Principle - Le blog de yzy</title>
+  <title>WhatCanIHoldWithYou - Le blog de yzy</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -222,7 +222,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Generalized Argument Principle"></span>
+            <span id="subtitle" data-typed-text="WhatCanIHoldWithYou"></span>
           
         </div>
 
@@ -233,8 +233,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-22 10:18" pubdate>
-          2023年3月22日 上午
+        <time datetime="2023-05-03 14:30" pubdate>
+          2023年5月3日 下午
         </time>
       </span>
     
@@ -245,7 +245,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.8k 字
+          1.4k 字
         
       </span>
     
@@ -256,7 +256,7 @@
         
         
         
-          16 分钟
+          12 分钟
         
       </span>
     
@@ -302,21 +302,38 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Generalized Argument Principle</h1>
+            <h1 style="display: none">WhatCanIHoldWithYou</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="定理陈述"><a href="#定理陈述" class="headerlink" title="定理陈述"></a>定理陈述</h3><p>Stein的复分析 Chapter 3 Exercise 16的第二问用到了这个结论。<br>广义幅角原理指的是<br>$$<br>\frac{1}{2 \pi i} \oint_{C} g(z) \frac{f^{\prime}(z)}{f(z)} d z=\sum_{a} n(C, a) g(a)-\sum_{b} n(C, b) g(b)<br>$$<br>例如，如果 $f$ 是以一个简单围道 $C$ 内部 $z_1 ， \ldots, z_p$ 为零点的多项式，以及 $g(z)=z^k$ ，则<br>$$<br>\frac{1}{2 \pi i} \oint_C z^k \frac{f^{\prime}(z)}{f(z)} d z=z_1^k+z_2^k+\cdots+z_p^k<br>$$<br>是 $ f $ 的根的次方和对称多项式。</p>
-<h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>考虑<br>$$<br>f(z)=\frac{\prod_{j=1}^n\left(z-z_j\right)}{\prod_{k=1}^m\left(z-p_k\right)} h(z)<br>$$<br>其中h是全纯函数，求对数导数有<br>$$<br>\frac{f^{\prime}(z)}{f(z)}=\sum_{j=1}^n \frac{1}{z-z_j}-\sum_{k=1}^m \frac{1}{z-p_k}+\frac{h^{\prime}(z)}{h(z)}<br>$$<br>乘上$ g(z) $ 后<br>$$<br>\begin{aligned}<br>g(z) \frac{f^{\prime}(z)}{f(z)}=&amp;\sum_{j=1}^n \frac{g(z)}{z-z_j}-\sum_{k=1}^m \frac{g(z)}{z-p_k}+g(z) \frac{h^{\prime}(z)}{h(z)} \<br>=&amp; \sum_{j=1}^n \frac{g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g\left(p_k\right)}{z-p_k}+\left(g(z) \frac{h^{\prime}(z)}{h(z)}+\sum_{j=1}^n \frac{g(z)-g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g(z)-g\left(p_k\right)}{z-p_k}\right)\<br>\end{aligned}<br>$$<br>括号里的项只有可去奇点，则<br>$$<br>g(z) \frac{f^{\prime}(z)}{f(z)}=\sum_{j=1}^n \frac{g\left(z_j\right)}{z-z_j}-\sum_{k=1}^m \frac{g\left(p_k\right)}{z-p_k}+\phi(z)<br>$$<br>其中$ \phi(z) $ 为全纯函数。</p>
-<p>对上式apply Residue Theorem即得。</p>
-<h3 id="Geometric-Picture-of-Argument-Principle"><a href="#Geometric-Picture-of-Argument-Principle" class="headerlink" title="Geometric Picture of Argument Principle"></a>Geometric Picture of Argument Principle</h3><p> 关于幅角原理，我们从另一个角度看，取一个区域 $ \Omega $, 如果 $ f(z)=p $ 在这个区域上有零点，考虑 $ g(z)=f(z)-p $ 的零点数，即 $$<br>     N(f(z)-p,\Omega)=\frac{1}{2\pi i}\int_{\partial \Omega}\mathrm{d} log(f(z)-p)=\frac{1}{2\pi }\int_{\partial \Omega}\mathrm{d} arg(log(f(z)-p))<br> $$<br> 这就是f(z)环绕p的环绕数。如图所示</p>
-<p><img src="/zy-yang.github.io/2023/03/22/Principle/A.png" srcset="/zy-yang.github.io/img/loading.gif" lazyload alt="&quot;A-geometrical-interpretation-of-the-Argument-Principle&quot;"></p>
-<p>关于复分析里的习题，</p>
-<ol>
-<li>Suppose $f$ and $g$ are holomorphic in a region containing the disc $|z| \leq 1$. Suppose that $f$ has a simple zero at $z=0$ and vanishes nowhere else in $|z| \leq 1$. Let<br>$$<br>f_\epsilon(z)=f(z)+\epsilon g(z)<br>$$<br>Show that if $\epsilon$ is sufficiently small, then<br>(a) $f_\epsilon(z)$ has a unique zero in $|z| \leq 1$, and 16. Suppose $f$ and $g$ are ho Suppose that $f$ has a simple Let<br>(b) if $z_\epsilon$ is this zero, the mapping $\epsilon \mapsto z_\epsilon$ is continuous.</li>
-</ol>
-<p>第二问只需要利用 广义幅角原理的推论即可证明。</p>
+                <p>What can I hold you with?</p>
+<p>还能用什么留住你呢？</p>
+<p>I offer you lean streets, desperate sunsets, the moon of the jagged suburbs.</p>
+<p>我予你枯寂的街道，失落的黄昏，和残缺的月。</p>
+<p>I offer you the bitterness of a man who has lookedlong and long at the lonely moon.</p>
+<p>我予你我那脉脉渴望孤月的苦涩。</p>
+<p>I offer you my ancestors, my dead men, the ghosts<br>that living men have honoured in bronze:</p>
+<p>我予你我逝去的先祖，他的灵魂被后人以石碑铭记。</p>
+<p>my father’s father killed in the frontier of<br>Buenos Aires, two bullets through his lungs,bearded and dead, wrapped by his soldiers in<br>the hide of a cow;</p>
+<p>我祖父战死在布宜诺斯艾利斯的边境，两颗子弹穿过他的肺。他蓄着胡子死了，他的尸体被士兵用牛皮包裹；</p>
+<p> my mother’s grandfather<br>–just twentyfour– heading a charge of<br>three hundred men in Peru, now ghosts on<br>vanished horses.</p>
+<p>我的外祖父，那时只有24岁，在秘鲁率领三百将士冲锋陷阵，如今灵魂消失于萧萧马鸣间。</p>
+<p>I offer you whatever insight my books may hold,<br>whatever manliness or humour my life.</p>
+<p>我予你我的书中所有的深刻洞见，我生命中所有的刚毅坚卓和幽默风趣。</p>
+<p>I offer you the loyalty of a man who has never<br>been loyal.</p>
+<p>我予你我的全然的忠诚纵使我从未获得。</p>
+<p>I offer you that kernel of myself that I have saved,<br>somehow –the central heart that deals not<br>in words, traffics not with dreams, and is<br>untouched by time, by joy, by adversities.</p>
+<p>我予你我所尽力存留的最柔软的内心。不知为何，这内心无法以言语表达，从未被时间，被欢乐，或被苦难染指。</p>
+<p>I offer you the memory of a yellow rose seen at<br>sunset, years before you were born.</p>
+<p>我予你落日下玫瑰上余晖的记忆，那时是你还未出生的遥远年岁。</p>
+<p>I offer you explanations of yourself, theories about<br>yourself, authentic and surprising news of<br>yourself.</p>
+<p>我予你你的表达，你的理论，你的真实而令人惊奇的消息。</p>
+<p>I can give you my loneliness, my darkness, the<br>hunger of my heart; I am trying to bribe you<br>with uncertainty, with danger, with defeat.</p>
+<p>我可以给你我的孤独，我的黑暗，我内心的饥渴；我试图用困惑，用危险和挫败来打动你。</p>
+<ul>
+<li>Jorge Luis Borges</li>
+</ul>
 
                 
               </div>
@@ -335,7 +352,7 @@
     
       <span class="category-chain">
         
-  <a href="/zy-yang.github.io/categories/%E6%95%B0%E5%AD%A6/" class="category-chain-item">数学</a>
+  <a href="/zy-yang.github.io/categories/%E7%BF%BB%E8%AF%91%E4%BD%9C%E5%93%81/" class="category-chain-item">翻译作品</a>
   
   
 
@@ -350,7 +367,11 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/zy-yang.github.io/tags/%E5%A4%8D%E5%88%86%E6%9E%90/">#复分析</a>
+        <a href="/zy-yang.github.io/tags/Poem/">#Poem</a>
+      
+        <a href="/zy-yang.github.io/tags/Translation/">#Translation</a>
+      
+        <a href="/zy-yang.github.io/tags/Borges/">#Borges</a>
       
     </div>
   
@@ -362,8 +383,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Generalized Argument Principle</div>
-      <div>https://github.com/Cyberyzy/2023/03/22/Principle/</div>
+      <div>WhatCanIHoldWithYou</div>
+      <div>https://github.com/Cyberyzy/2023/05/03/WhatCanIHoldWithYou/</div>
     </div>
     <div class="license-meta">
       
@@ -375,7 +396,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月22日</div>
+          <div>2023年5月3日</div>
         </div>
       
       
@@ -407,18 +428,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/zy-yang.github.io/2023/03/24/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E4%BA%94/" title="清华园日记·其五">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">清华园日记·其五</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/zy-yang.github.io/2023/03/17/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0%C2%B7%E5%85%B6%E5%9B%9B/" title="清华园日记·其四">
-                        <span class="hidden-mobile">清华园日记·其四</span>
+                      <a href="/zy-yang.github.io/2023/05/03/LeFestin/" title="LeFestin">
+                        <span class="hidden-mobile">LeFestin</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
