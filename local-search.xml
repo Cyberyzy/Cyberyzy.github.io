@@ -4,12 +4,43 @@
   
   
   <entry>
+    <title>LeFestin</title>
+    <link href="/zy-yang.github.io/2023/05/03/LeFestin/"/>
+    <url>/zy-yang.github.io/2023/05/03/LeFestin/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Camille卡米丽——Le-Festin-盛宴"><a href="#Camille卡米丽——Le-Festin-盛宴" class="headerlink" title="Camille卡米丽——Le Festin 盛宴"></a>Camille卡米丽——Le Festin 盛宴</h2><p>Les rêves des amoureux sont comme le bon vin<br>恋人的梦就像好酒<br>Ils donnent de la joie ou bien du chagrin<br>使人欣喜或伤感<br>Affaibli par la faim je suis malheureux<br>我饿得发慌好难过<br>Volant en chemin tout ce que je peux<br>路途上能偷就偷<br>Car rien n’est gratuit dans la vie<br>因为天下沒有白吃的午餐</p><p>L’espoir est un plat bien trop vite consommé<br>希望是一道太快吃完的菜<br>à sauter les repas je suis habitué<br>我已经习惯有一餐沒一餐<br>Un voleur solitaire est triste à nourrir<br>孤独的小偷伤心得吃不下<br>à nous, je suis amer, je veux réussir<br>我心中酸苦，渴望成功<br>Car rien n’est gratuit dans la vie<br>因为天下沒有白吃的午餐</p><p>Jamais on ne me dira que la course aux étoiles, a n’est pas pour moi<br>没人可以说追求梦想是我做不到的事<br>Laisser-moi vous émerveillez, prendre mon envol<br>让我使你们惊叹，发挥所长<br>Nous allons enfin nous régaler<br>我们终于能大快朵颐</p><p>La fête va enfin commencer<br>派对终于开始<br>Et sortez les bouteilles, finis les ennuis<br>拿出好酒，忘掉烦恼<br>Je dresse la table, demain nouvelle vie<br>我摆饰餐桌，明日又是新生<br>Je suis heureux à l’idée de ce nouveau destin<br>我欣然面对新的命运<br>Une vie à me cacher, et puis libre enfin<br>以往躲躲藏藏，终于自由<br>Le festin est sur mon chemin<br>盛宴近在眼前<br>Une vie à me cacher et puis libre enfin<br>以往躲躲藏藏，如今终于自由<br>Le festin est sur mon chemin<br>盛宴近在眼前…</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>French</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>-Sung -Translation</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Elliptic Function</title>
     <link href="/zy-yang.github.io/2023/05/02/Function/"/>
     <url>/zy-yang.github.io/2023/05/02/Function/</url>
     
     <content type="html"><![CDATA[<p>Introduction of elliptic function~💩</p><span id="more"></span> <h2 id="Approach-from-Jacobi"><a href="#Approach-from-Jacobi" class="headerlink" title="Approach from Jacobi"></a>Approach from Jacobi</h2><p>Jacobi considered the exact solution of Motion of Simple Pendulum. Let $ m $ be the mass of the<br>bob at the end of the pendulum, $ a $ be the length of the pendulum, $ \theta $ be the<br>angle of inclination which the pendulum makes with a vertical line,$ \alpha $ be the<br>initial angle of inclination when the pendulum is released from rest position<br>at time zero, $ t $ be the time variable, and $ g  $ be the constant of the gravity of<br>the earth. The equation of the conservation of energy is $$<br>    \frac{1}{2}ma^2\left(\frac{d\theta}{dt}\right)-mgacos\theta=-mgacos\alpha<br>$$ </p><p>Replace $ cos\theta $ by $ 1-\dfrac{\theta^2}{2} $ to give $$<br>    \left(\frac{d\theta}{dt}\right)^2+A\theta^2=B<br>$$<br>solution is $$<br>    t=\rho sin(\sigma \theta+\tau)<br>$$ </p><p>But what is the exact solution?</p><p>Exchange function by using double angle formula<br>$$<br>     \left(\frac{d\theta}{dt}\right)^2=2\frac{g}{a}(cos\theta-cos\alpha)=4\frac{g}{a}(sin^2\dfrac{\alpha}{2}-sin^2\dfrac{\theta}{2})<br>$$<br>$$<br>    =4\frac{gsin^2\frac{\alpha}{2}}{a}(1-\left(\frac{sin\frac{\theta}{2}}{sin\frac{\alpha}{2}}\right)^2)<br>$$ </p><p>What does it mean?</p><p>$$<br>    cos\theta\approx 1-\frac{\theta^2}{2}\space and\space cos\theta=1-2sin^2(\theta)<br>$$<br>gives out the motivation. Exchange $ sin\frac{\alpha}{2} $ as $ sin\varphi $, then$$<br>    \left(\dfrac{d\varphi}{dt}\right)^2=\dfrac{g}{a}\left(1-\sin^2\dfrac{\alpha}{2}\sin^2\varphi\right).<br>$$<br>and the solution is$$<br>    t=\sqrt{\dfrac{a}{g}}\int_{\psi=0}^{\varphi}\dfrac{d\psi}{\sqrt{1-\sin^2\frac{\alpha}{2}\sin^2\psi}}.<br>$$<br>We also know $$<br>    \int_{0}^{\frac{\pi}{2}}\sin^{2n}\varphi d\varphi=\dfrac{\pi}{2}\cdot\dfrac{1\cdot3\cdot5\cdots(2n-1)}{2\cdot4\cdot6\cdots(2n)}<br>$$<br>by residue theorem, we can take Taylor expansion of the solution which is $$<br>    \begin{gathered}<br>=2\pi\sqrt{\frac{a}{g}}\left(1+\left(\frac{1}{2}\right)^{2}k^{2}+\left(\frac{1\cdot3}{2\cdot4}\right)^{2}k^{4}+\cdots\right),<br>\end{gathered}<br>$$ </p><p>That is where elliptic function araises</p><h2 id="Abel’s-approach"><a href="#Abel’s-approach" class="headerlink" title="Abel’s approach"></a>Abel’s approach</h2><p>Consider the integration of the 1-form$$<br>    \omega:=\frac{dz}{\sqrt{(1-z^2)(1-k^2z^2)}},\quad z\in \mathbb{C}<br>$$<br>function$$<br>    \sqrt{(1-z^2)(1-k^2z^2)}<br>$$<br>has four roots and it’s double-valued. We want to turn it into single-valued. The idea is construct a <strong>new structure</strong> replace a single point by two points(except $ z=\pm 1,\pm 1/k $ )</p><p>on the domain obtained by removing the two branch-cuts [−1/k,−1] and [1,1/k]<br>from the Riemann sphere $ \mathbb{P}_1 =\mathbb{C} \bigcup {\infty}  $ . The two branches are the negative of each other. Any of the two branches take values of opposite sign on both edges of each of the two branch-cuts. To get the Riemann surface X we can take two copies of $ \mathbb{P}_1-\left(\left[\frac{-1}{k},-1\right]\cup\left[1,\frac{1}{k}\right]\right) $ and join them by identifying the upper<br>edge of $ \left[\frac{-1}{k},-1\right] $  in one copy identified with the lower edge of $ \left[\frac{-1}{k},-1\right] $<br>in the<br>other copy and at the same time identifying the upper edge of $ \left[1,\frac{1}{k}\right] $<br>in onecopy identified with the lower edge of $ \left[1,\frac{1}{k}\right] $ in the other copy.</p><h2 id="Weierstrass-wp-z-function"><a href="#Weierstrass-wp-z-function" class="headerlink" title="Weierstrass $ \wp(z) $ function"></a>Weierstrass $ \wp(z) $ function</h2>]]></content>
     
+    
+    <categories>
+      
+      <category>数学笔记</category>
+      
+    </categories>
     
     
     <tags>
