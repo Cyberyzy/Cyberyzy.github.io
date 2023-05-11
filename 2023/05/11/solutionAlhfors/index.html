@@ -16,16 +16,17 @@
   <meta name="author" content="zy-yang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="title: Addition Formulaedate: 2023-05-08 18:18:57tags: 椭圆函数categories: 数学笔记mathjax: true  Introduction to addition formularrr~💩">
+    <meta name="description" content="Alhfors Complex Analysis 的习题答案，主要是椭圆函数这一节。 P274 Exercise 1The Weierstrass functions satisfy numerous identities which are best dealt with in an exercise section. They can be proved either by comparing">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Bievenue sur le blog de yzy">
-<meta property="og:url" content="https://cyberyzy.github.io/2023/05/08/Formula/index.html">
+<meta property="og:title" content="Solution to Alhfors">
+<meta property="og:url" content="https://cyberyzy.github.io/2023/05/11/solutionAlhfors/index.html">
 <meta property="og:site_name" content="Bievenue sur le blog de yzy">
-<meta property="og:description" content="title: Addition Formulaedate: 2023-05-08 18:18:57tags: 椭圆函数categories: 数学笔记mathjax: true  Introduction to addition formularrr~💩">
+<meta property="og:description" content="Alhfors Complex Analysis 的习题答案，主要是椭圆函数这一节。 P274 Exercise 1The Weierstrass functions satisfy numerous identities which are best dealt with in an exercise section. They can be proved either by comparing">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-05-08T10:18:57.275Z">
-<meta property="article:modified_time" content="2023-05-09T11:23:23.434Z">
+<meta property="article:published_time" content="2023-05-11T14:51:21.000Z">
+<meta property="article:modified_time" content="2023-05-11T16:35:10.532Z">
 <meta property="article:author" content="zy-yang">
+<meta property="article:tag" content="math">
 <meta name="twitter:card" content="summary_large_image">
   
   
@@ -34,7 +35,7 @@
   
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
   
-  <title>Bievenue sur le blog de yzy</title>
+  <title>Solution to Alhfors - Bievenue sur le blog de yzy</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -231,7 +232,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="Solution to Alhfors"></span>
           
         </div>
 
@@ -242,8 +243,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-05-08 18:18" pubdate>
-          2023年5月8日 晚上
+        <time datetime="2023-05-11 22:51" pubdate>
+          2023年5月11日 晚上
         </time>
       </span>
     
@@ -254,7 +255,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2k 字
+          3.5k 字
         
       </span>
     
@@ -265,7 +266,7 @@
         
         
         
-          17 分钟
+          29 分钟
         
       </span>
     
@@ -311,22 +312,37 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none"></h1>
+            <h1 style="display: none">Solution to Alhfors</h1>
             
             
               <div class="markdown-body">
                 
-                <hr>
-<p>title: Addition Formulae<br>date: 2023-05-08 18:18:57<br>tags: 椭圆函数<br>categories: 数学笔记<br>mathjax: true</p>
-<hr>
-<p>Introduction to addition formularrr~💩</p>
-<span id="more"></span>
-<h2 id="The-addition-formular"><a href="#The-addition-formular" class="headerlink" title="The addition formular"></a>The addition formular</h2><p>Consider the map<br>$$<br>    z\to (1,\wp(z),\wp(z)^\prime)<br>$$<br>It parametrizes points on the cubic curve A defined by the equation<br>$$<br>    y^2=4x^3-g_2x-g_3<br>$$</p>
-<p>The map is actually defined on the torus $\mathbb{C}/\Lambda$</p>
-<p>Now for any complex number $\alpha$, $\wp(z)-\alpha$ has at most two zeros and at least one zero, so that already under $\wp$ we cover each complex number $\alpha$</p>
-<p>Furthermore, $\mathbb{C}/\Lambda$ has a natural group structure, and we now want to see what it looks like when transported to A. We shall see that it’s algebraic. In other words, if $$<br>P_1=(x_1,y_1), \quad P_2=(x_2,y_2), \quad P_3=(x_3,y_3)<br>$$<br>and<br>$$<br>P_{3}=P_{1}+P_{2}<br>$$<br>then we shall express $x_3 , y_3$ as rational functions of $x_1 , y_1$ and $x_2 , y_2$. We shall see that $P_3$ is obtained by taking the line through $P_1,P_2$, intersecting it with the curve, and reflecting the point of intersection through the x-axis.<br>Select $u_1,u_2\in C$ and $\notin L$, and assume $u_1= u_2 (mod \lambda)$. Let a, b be complex numbers such that<br>$$<br>    \begin{gathered}<br>\wp^{\prime}(u_{1}) =a\wp(u_1)+b \<br>\wp^{\prime}(u_{2}) =a\wp(u_2)+b,<br>\end{gathered}<br>$$<br>in other words y = ax + b is the line through $\wp^{\prime}(u_{1}) =a\wp(u_1)+b$,and $\wp^{\prime}(u_{2}) =a\wp(u_2)+b$.<br>Then<br>$$<br>    \wp^{\prime}(z)-a\wp(z)-b<br>$$<br>has a pole of order 3 at 0, whence it has 3 zeros, counting multiplicities, and tow of these at $u_1,u_2$. If say $u_1$ had multiplicity 2, then<br>$$<br>    2u_1+u_2=0 (mod\space \lambda)<br>$$<br>and<br>$$<br>    u_3=-(u_1+u_2)(mod \space\lambda)<br>$$<br>the equation<br>$$<br>    4x^{3}-g_{2}x-g_{3}-(a x+b)^{2}=0<br>$$<br>has 3 roots. and $$<br>    LHS=4(x-\wp(u_{1}))(x-\wp(u_{2}))(x-\wp(u_{3})).<br>$$<br>and you can get<br>$$<br>    \wp(u_1)+\wp(u_2)+\wp(u_3)=\frac{a^2}{4}<br>$$ </p>
-<p>we also have<br>$$<br>  a(\wp(u_{1})-\wp(u_{2}))=\wp^{\prime}(u_{1})-\wp^{\prime}(u_{2})<br>$$<br>So<br>$$<br>    \wp(u_{3})=\wp(-(u_{1}+u_{2}))=\wp(u_{1}+u_{2})<br>$$<br>and we get<br>$$<br>    \wp(u_1+u_2)=-\wp(u_1)-\wp(u_2)+\frac{1}{4}\bigg(\frac{\wp’(u_1)-\wp’(u_2)}{\wp(u_1)-\wp(u_2)}\bigg)^2<br>$$<br>if we take limit as $u_1\to u_2$ and get<br>$$<br>    \wp(2u)=-2\wp(u)+\frac{1}{4}\bigg(\frac{\wp^{\prime\prime}(u)}{\wp^{\prime}(u)}<br>    \bigg)^2<br>$$</p>
-<h2 id="Endomorphisms-Automorphisms-and-Isomorphisms"><a href="#Endomorphisms-Automorphisms-and-Isomorphisms" class="headerlink" title="Endomorphisms, Automorphisms, and Isomorphisms"></a>Endomorphisms, Automorphisms, and Isomorphisms</h2>
+                <p>Alhfors Complex Analysis 的习题答案，主要是椭圆函数这一节。</p>
+<h2 id="P274-Exercise-1"><a href="#P274-Exercise-1" class="headerlink" title="P274 Exercise 1"></a>P274 Exercise 1</h2><p>The Weierstrass functions satisfy numerous identities which are best dealt with in an exercise section. They can be proved either by comparing two elliptic functions with the same zeros and poles (when $ \sigma $ -functions are involved), or by comparing elliptic functions with the same singular parts (when only $ \wp $ and $ \zeta $ -functions are involved). The following sequence of formulas is so arranged that we need to resort to this method only once.</p>
+<ol>
+<li>$$<br> \wp(z)-\wp(u)=-\frac{\sigma(z-u)\sigma(z+u)}{\sigma(z)^2\sigma(u)^2}<br>$$</li>
+</ol>
+<p>依据提示，我们考虑利用3.2节的(14)式，即<br>$$<br>    \begin{gathered}<br>\sigma(z+\omega_1) =-\sigma(z)e^{\eta_1(z+\omega_1/2)} \<br>\sigma(z+\omega_2) =-\sigma(z)e^{\eta_2(z+\omega_2/2)}.<br>\end{gathered}<br>$$</p>
+<p>证明右侧式的周期为$ \omega_1,\omega_2 $<br>事实上<br>$$<br>\begin{align*}<br>\phi(z+\omega_1)&amp;=-\frac{\sigma(z-u+\omega_1)\sigma(z+u+\omega_1)}{\sigma(z+\omega_1)^2\sigma(u)^2} \<br>&amp;=-\frac{\sigma(z-u)\sigma(z+u)e^{2\eta_1z+\eta_1\omega_1}}{\sigma(z)^2\sigma(u)^2e^{2\eta_1(z+\omega_1/2)}}\<br>&amp;=-\frac{\sigma(z-u)\sigma(z+u)}{\sigma(z)^2\sigma(u)^2}\<br>&amp;=\phi(z)<br>\end{align*}<br>$$</p>
+<p>同理可证$ \omega_2 $ 也为$ \phi(z) $ 的周期。<br>我们再考虑$ \phi(z) $ 的零极点<br>显然左式的零点为$ \pm u $, 仅有的二阶极点为原点。<br>对于右式，有<br>$$ \phi(u)=\phi(-u)=0 $$</p>
+<p>且$ \phi(z) $的极点为 $ \sigma(z)$ 的零点。由定义可知为$ z=0 $,且是二阶极点。<br>综上可知<br> $$<br>    \wp(z)-\wp(u)=-\frac{\sigma(z-u)\sigma(z+u)}{\sigma(z)^2\sigma(u)^2}<br>$$</p>
+<h2 id="P274-Exercise-2"><a href="#P274-Exercise-2" class="headerlink" title="P274 Exercise 2"></a>P274 Exercise 2</h2><p>Prove<br>$$<br>    \frac{\wp’(z)}{\wp(z)-\wp(u)}=\zeta(z-u)+\zeta(z+u)-2\zeta(z)<br>$$</p>
+<p>Follows from (16) by taking logarithmic derivatives.</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p> 依据提示，我们考虑利用上面的结论，对两边求对数导数，即<br> $$<br>    \begin{align*}<br>    &amp;\frac{\wp’(z)}{\wp(z)-\wp(u)}\<br>    &amp;=\frac{(\sigma(z-u)^{\prime}\sigma(z+u)+\sigma(z-u)\sigma(z+u)^{\prime})}{\sigma(z+u)\sigma(z-u)}\<br>    &amp;-2\frac{\sigma(z+u)\sigma(z-u)\sigma(z)^{\prime}}{\sigma(z)\sigma(z+u)\sigma(z-u)}\<br>    &amp;=\zeta(z-u)+\zeta(z+u)-2\zeta(z)<br>    \end{align*}<br> $$<br> 证毕</p>
+<h2 id="P274-Exercise-3"><a href="#P274-Exercise-3" class="headerlink" title="P274 Exercise 3"></a>P274 Exercise 3</h2><p>Prove<br>$$<br>    \zeta(z+u)=\zeta(z)+\zeta(u)+\frac{1}{2}\frac{\wp’(z)-\wp’(u)}{\wp(z)-\wp(u)}<br>$$</p>
+<p>This is a symmetrized version of (17).</p>
+<h2 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution"></a>Solution</h2><p>事实上，对换 Exercise 2中$ z $ 和$ u $ 的位置可以得到<br>$$<br>      \frac{\wp’(u)}{\wp(u)-\wp(z)}=\zeta(u-z)+\zeta(u+z)-2\zeta(u)<br>$$<br>则有<br>$$<br>\begin{align*}<br>    \frac{1}{2}\frac{\wp’(z)-\wp’(u)}{\wp(z)-\wp(u)}&amp;=\zeta(u+z)+\frac{1}{2}(\zeta(u-z)+\zeta(z-u))\<br>    &amp;-(\zeta(u)+\zeta(z))\<br>    &amp;=\zeta(u+z)-(\zeta(u)+\zeta(z))<br>\end{align*}<br>$$<br>移项即得。</p>
+<h2 id="P277-Exercise-5"><a href="#P277-Exercise-5" class="headerlink" title="P277 Exercise 5"></a>P277 Exercise 5</h2><p>Prove $$<br>    \wp(2z)=\frac{1}{4}\left(\frac{\wp’’(z)}{\wp’(z)}\right)^2-2\wp(z)<br>$$</p>
+<h2 id="Solution-2"><a href="#Solution-2" class="headerlink" title="Solution"></a>Solution</h2><p>考虑使用加法公式<br>$$<br>    \wp(z+u)=-\wp(z)-\wp(u)+\frac{1}{4}\bigg(\frac{\wp’(z)-\wp’(u)}{\wp(z)-\wp(u)}\bigg)^2<br>$$</p>
+<p>令$ u=z+\Delta z $,则<br>$$<br>\begin{align*}<br>    \wp(2z+\Delta z)&amp;=-\wp(z)-\wp(z+\Delta z)\<br>    &amp;+\frac{1}{4}\bigg(\frac{\wp’(z)-\wp’(z+\Delta z)}{\wp(z)-\wp(z+\Delta z)}\bigg)^2\<br>\end{align*}<br>$$</p>
+<p>而<br>$$<br>    \lim_{\Delta z\to 0}-\wp(z)-\wp(z+\Delta z)=-2\wp(z)<br>$$</p>
+<p>$$<br>\begin{align*}<br>    \frac{1}{4}\bigg(\frac{\wp’(z)-\wp’(z+\Delta z)}{\wp(z)-\wp(z+\Delta z)}\bigg)^2&amp;=\frac{1}{4}\bigg(\frac{(\wp’(z)-\wp’(z+\Delta z))/\Delta z}{(\wp(z)-\wp(z+\Delta z))/\Delta z}\bigg)^2\<br>&amp;=\frac{1}{4}\left(\frac{\wp’’(z)}{\wp’(z)}\right)^2\quad \Delta z\to 0<br>\end{align*}<br>$$</p>
+<p>则$$<br>    \wp(2z)=\frac{1}{4}\left(\frac{\wp’’(z)}{\wp’(z)}\right)^2-2\wp(z)<br>$$</p>
+<h2 id="P277-Exercise-6"><a href="#P277-Exercise-6" class="headerlink" title="P277 Exercise 6"></a>P277 Exercise 6</h2><p>Prove<br>$$<br>    \wp’(z)=-\sigma(2z)/\sigma(z)^4<br>$$</p>
+<h2 id="Solution-3"><a href="#Solution-3" class="headerlink" title="Solution"></a>Solution</h2><p>注意到右侧极点为$ z=0 $,且为3阶极点，而零点则为$$<br>    \frac{\omega_1}{2},\space\frac{\omega_2}{2},\space\frac{\omega_1+\omega_2}{2}<br>$$<br>事实上有$$<br>    -\sigma(\omega_1)/\sigma(\omega_1/2)^4=-\frac{\sigma(0)e^{\eta_1\omega_1/2}}{\sigma(\omega_1/2)^4}=0<br>$$</p>
+<p>同理可证其余情况。<br>而周期性是显然的，由式(14)立得<br>$$<br>\begin{align*}<br>    -\sigma(2z+2\omega_1)/\sigma(z+\omega_1)^4&amp;=-\frac{\sigma(2z)e^{4\eta_1z+2\eta_1\omega_1}}{\sigma(z)^4e^{4\eta_1(z+\omega_1/2)}}\<br>    &amp;=-\sigma(2z)/\sigma(z)^4<br>\end{align*}<br>$$ </p>
+<p>同理可证$ \omega_2 $也是周期， 由此可得<br>$$<br>    \wp’(z)=-\sigma(2z)/\sigma(z)^4<br>$$</p>
+
                 
               </div>
             
@@ -334,6 +350,13 @@
             <div>
               <div class="post-metas my-3">
   
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/math/">#math</a>
+      
+    </div>
   
 </div>
 
@@ -343,8 +366,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
-      <div>https://cyberyzy.github.io/2023/05/08/Formula/</div>
+      <div>Solution to Alhfors</div>
+      <div>https://cyberyzy.github.io/2023/05/11/solutionAlhfors/</div>
     </div>
     <div class="license-meta">
       
@@ -356,7 +379,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年5月8日</div>
+          <div>2023年5月11日</div>
         </div>
       
       
@@ -388,18 +411,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/05/11/solutionAlhfors/" title="Solution to Alhfors">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Solution to Alhfors</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/05/05/5%E6%9C%88%E6%97%A5%E8%AE%B0/" title="日记.2023.5月">
-                        <span class="hidden-mobile">日记.2023.5月</span>
+                      <a href="/2023/05/08/Formula/" title="">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
