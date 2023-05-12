@@ -42,6 +42,31 @@
   
   
   <entry>
+    <title>Addition Formulae</title>
+    <link href="/2023/05/08/AdditionFormulae/"/>
+    <url>/2023/05/08/AdditionFormulae/</url>
+    
+    <content type="html"><![CDATA[<p>Introduction to addition formularrr~💩</p><span id="more"></span><h2 id="The-addition-formular"><a href="#The-addition-formular" class="headerlink" title="The addition formular"></a>The addition formular</h2><p>Consider the map<br>$$<br>    z\to (1,\wp(z),\wp(z)^\prime)<br>$$<br>It parametrizes points on the cubic curve A defined by the equation<br>$$<br>    y^2=4x^3-g_2x-g_3<br>$$</p><p>The map is actually defined on the torus $\mathbb{C}/\Lambda$</p><p>Now for any complex number $\alpha$, $\wp(z)-\alpha$ has at most two zeros and at least one zero, so that already under $\wp$ we cover each complex number $\alpha$</p><p>Furthermore, $\mathbb{C}/\Lambda$ has a natural group structure, and we now want to see what it looks like when transported to A. We shall see that it’s algebraic. In other words, if $$<br>P_1=(x_1,y_1), \quad P_2=(x_2,y_2), \quad P_3=(x_3,y_3)<br>$$</p><p>and</p><p>$$<br>P_{3}=P_{1}+P_{2}<br>$$</p><p>then we shall express $x_3 , y_3$ as rational functions of $x_1 , y_1$ and $x_2 , y_2$. We shall see that $P_3$ is obtained by taking the line through $P_1,P_2$, intersecting it with the curve, and reflecting the point of intersection through the x-axis.<br>Select $u_1,u_2\in C$ and $\notin L$, and assume $u_1= u_2 (mod \lambda)$. Let a, b be complex numbers such that<br>$$<br>    \begin{gathered}<br>\wp^{\prime}(u_{1}) =a\wp(u_1)+b \<br>\wp^{\prime}(u_{2}) =a\wp(u_2)+b<br>\end{gathered}<br>$$<br>in other words y = ax + b is the line through $\wp^{\prime}(u_{1}) =a\wp(u_1)+b$,and $\wp^{\prime}(u_{2}) =a\wp(u_2)+b$.<br>Then<br>$$<br>    \wp^{\prime}(z)-a\wp(z)-b<br>$$</p><p>has a pole of order 3 at 0, whence it has 3 zeros, counting multiplicities, and tow of these at $u_1,u_2$. If say $u_1$ had multiplicity 2, then</p><p>$$<br>    2u_1+u_2=0 (mod\space \lambda)<br>$$</p><p>and</p><p>$$<br>    u_3=-(u_1+u_2)(mod \space\lambda)<br>$$</p><p>the equation</p><p>$$<br>    4x^{3}-g_{2}x-g_{3}-(a x+b)^{2}=0<br>$$</p><p>has 3 roots. and $$<br>    LHS=4(x-\wp(u_{1}))(x-\wp(u_{2}))(x-\wp(u_{3})).<br>$$<br>and you can get<br>$$<br>    \wp(u_1)+\wp(u_2)+\wp(u_3)=\frac{a^2}{4}<br>$$</p><p>we also have<br>$$<br>  a(\wp(u_{1})-\wp(u_{2}))=\wp^{\prime}(u_{1})-\wp^{\prime}(u_{2})<br>$$<br>So</p><p>$$<br>    \wp(u_{3})=\wp(-(u_{1}+u_{2}))=\wp(u_{1}+u_{2})<br>$$<br>and we get</p><p>$$<br>    \wp(u_1+u_2)=-\wp(u_1)-\wp(u_2)+\frac{1}{4}\bigg(\frac{\wp’(u_1)-\wp’(u_2)}{\wp(u_1)-\wp(u_2)}\bigg)^2<br>$$<br>if we take limit as $u_1\to u_2$ and get<br>$$<br>    \wp(2u)=-2\wp(u)+\frac{1}{4}\bigg(\frac{\wp^{\prime\prime}(u)}{\wp^{\prime}(u)}<br>    \bigg)^2<br>$$</p><h2 id="Endomorphisms-Automorphisms-and-Isomorphisms"><a href="#Endomorphisms-Automorphisms-and-Isomorphisms" class="headerlink" title="Endomorphisms, Automorphisms, and Isomorphisms"></a>Endomorphisms, Automorphisms, and Isomorphisms</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>数学笔记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>椭圆函数</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>日记.2023.5月</title>
     <link href="/2023/05/05/5%E6%9C%88%E6%97%A5%E8%AE%B0/"/>
     <url>/2023/05/05/5%E6%9C%88%E6%97%A5%E8%AE%B0/</url>
