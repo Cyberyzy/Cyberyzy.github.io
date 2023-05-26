@@ -16,15 +16,15 @@
   <meta name="author" content="zy-yang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="In order to verify a function family is normal, we actually have methods below: Montel TheoremMontel Theorem tells us that a locally bounded function family is normal. If the family $ \mathcal{F} $ is">
+    <meta name="description" content="整理一些关于共形映射的算例。 初等函数 sinz  将区域 $$A&#x3D;{|Re(z)|&lt;\frac{\pi}{2}}$$ 映到上半平面  arcsinz  将区域 $$A&#x3D;{|Im(z)|&lt;\frac{\pi}{2},Re(z)&gt;0}$$ 映到上半平面 Schwarz-Christoffel Integral定理设 $ a_1&lt;a_2 &lt;a_3 $ 为实数，$ \ome">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Normal Family Theory">
-<meta property="og:url" content="https://cyberyzy.github.io/2023/05/25/MontelThm/index.html">
+<meta property="og:title" content="Schwarz-Christoffel Integral">
+<meta property="og:url" content="https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/index.html">
 <meta property="og:site_name" content="Bievenue sur le blog de yzy">
-<meta property="og:description" content="In order to verify a function family is normal, we actually have methods below: Montel TheoremMontel Theorem tells us that a locally bounded function family is normal. If the family $ \mathcal{F} $ is">
+<meta property="og:description" content="整理一些关于共形映射的算例。 初等函数 sinz  将区域 $$A&#x3D;{|Re(z)|&lt;\frac{\pi}{2}}$$ 映到上半平面  arcsinz  将区域 $$A&#x3D;{|Im(z)|&lt;\frac{\pi}{2},Re(z)&gt;0}$$ 映到上半平面 Schwarz-Christoffel Integral定理设 $ a_1&lt;a_2 &lt;a_3 $ 为实数，$ \ome">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-05-25T11:54:16.000Z">
-<meta property="article:modified_time" content="2023-05-25T13:46:48.457Z">
+<meta property="article:published_time" content="2023-05-26T13:42:41.000Z">
+<meta property="article:modified_time" content="2023-05-26T13:52:35.673Z">
 <meta property="article:author" content="zy-yang">
 <meta property="article:tag" content="math">
 <meta name="twitter:card" content="summary_large_image">
@@ -35,7 +35,7 @@
   
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
   
-  <title>Normal Family Theory - Bievenue sur le blog de yzy</title>
+  <title>Schwarz-Christoffel Integral - Bievenue sur le blog de yzy</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -232,7 +232,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Normal Family Theory"></span>
+            <span id="subtitle" data-typed-text="Schwarz-Christoffel Integral"></span>
           
         </div>
 
@@ -243,8 +243,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-05-25 19:54" pubdate>
-          2023年5月25日 晚上
+        <time datetime="2023-05-26 21:42" pubdate>
+          2023年5月26日 晚上
         </time>
       </span>
     
@@ -255,7 +255,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          358 字
+          307 字
         
       </span>
     
@@ -312,16 +312,26 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Normal Family Theory</h1>
+            <h1 style="display: none">Schwarz-Christoffel Integral</h1>
             
             
               <div class="markdown-body">
                 
-                <p>In order to verify a function family is normal, we actually have methods below:</p>
-<h2 id="Montel-Theorem"><a href="#Montel-Theorem" class="headerlink" title="Montel Theorem"></a>Montel Theorem</h2><p>Montel Theorem tells us that a locally bounded function family is normal.</p>
-<p>If the family $ \mathcal{F} $ is uniformly bounded in every compact subset of a region $ \Omega $, then it is a normal family.</p>
-<p>The proof is based on Arzela-Ascoli Theorem.</p>
-<p>We only need to check whether functions are bounded by using such as Cauchy-Integral or sth.</p>
+                <p>整理一些关于共形映射的算例。</p>
+<h2 id="初等函数"><a href="#初等函数" class="headerlink" title="初等函数"></a>初等函数</h2><ol>
+<li>sinz</li>
+</ol>
+<p>将区域</p>
+<p>$$<br>A={|Re(z)|&lt;\frac{\pi}{2}}<br>$$</p>
+<p>映到上半平面</p>
+<ol start="2">
+<li>arcsinz</li>
+</ol>
+<p>将区域</p>
+<p>$$<br>A={|Im(z)|&lt;\frac{\pi}{2},Re(z)&gt;0}<br>$$</p>
+<p>映到上半平面</p>
+<h2 id="Schwarz-Christoffel-Integral"><a href="#Schwarz-Christoffel-Integral" class="headerlink" title="Schwarz-Christoffel Integral"></a>Schwarz-Christoffel Integral</h2><p>定理设 $ a_1&lt;a_2 &lt;a_3 $ 为实数，$ \omega_1，\omega_2，\omega_3 $ 为多角形域 $P$ 上按顺序排列的某三个顶点。则存在唯一的函数 $ f $ ，把 $ \mathbb{H} $ 双全纯地映射到 $ P $ ，把实轴一一连续地映射为 $ \partial P $ ，且</p>
+<p>$$<br>f(a_k)=w_k(k=1,2,3)<br>$$</p>
 
                 
               </div>
@@ -346,8 +356,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Normal Family Theory</div>
-      <div>https://cyberyzy.github.io/2023/05/25/MontelThm/</div>
+      <div>Schwarz-Christoffel Integral</div>
+      <div>https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/</div>
     </div>
     <div class="license-meta">
       
@@ -359,7 +369,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年5月25日</div>
+          <div>2023年5月26日</div>
         </div>
       
       
@@ -391,18 +401,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/05/26/SchwarzChristoffel/" title="Schwarz-Christoffel Integral">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Schwarz-Christoffel Integral</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/05/13/ThetaFunction/" title="Theta Function">
-                        <span class="hidden-mobile">Theta Function</span>
+                      <a href="/2023/05/25/MontelThm/" title="Normal Family Theory">
+                        <span class="hidden-mobile">Normal Family Theory</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
