@@ -24,7 +24,7 @@
 <meta property="og:description" content="Introduction to addition formularrr~💩">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-05-08T10:18:57.000Z">
-<meta property="article:modified_time" content="2023-05-12T01:29:36.400Z">
+<meta property="article:modified_time" content="2023-05-31T05:55:58.675Z">
 <meta property="article:author" content="zy-yang">
 <meta property="article:tag" content="椭圆函数">
 <meta name="twitter:card" content="summary_large_image">
@@ -255,7 +255,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.9k 字
+          2.3k 字
         
       </span>
     
@@ -266,7 +266,7 @@
         
         
         
-          16 分钟
+          20 分钟
         
       </span>
     
@@ -319,24 +319,49 @@
                 
                 <p>Introduction to addition formularrr~💩</p>
 <span id="more"></span>
-<h2 id="The-addition-formular"><a href="#The-addition-formular" class="headerlink" title="The addition formular"></a>The addition formular</h2><p>Consider the map<br>$$<br>    z\to (1,\wp(z),\wp(z)^\prime)<br>$$<br>It parametrizes points on the cubic curve A defined by the equation<br>$$<br>    y^2=4x^3-g_2x-g_3<br>$$</p>
+
+<h2 id="The-addition-formular"><a href="#The-addition-formular" class="headerlink" title="The addition formular"></a>The addition formular</h2><p>Consider the map</p>
+<p>$$<br>    z\to (1,\wp(z),\wp(z)^\prime)<br>$$</p>
+<p>It parametrizes points on the cubic curve A defined by the equation</p>
+<p>$$<br>    y^2=4x^3-g_2x-g_3<br>$$</p>
 <p>The map is actually defined on the torus $\mathbb{C}/\Lambda$</p>
 <p>Now for any complex number $\alpha$, $\wp(z)-\alpha$ has at most two zeros and at least one zero, so that already under $\wp$ we cover each complex number $\alpha$</p>
-<p>Furthermore, $\mathbb{C}/\Lambda$ has a natural group structure, and we now want to see what it looks like when transported to A. We shall see that it’s algebraic. In other words, if $$<br>P_1=(x_1,y_1), \quad P_2=(x_2,y_2), \quad P_3=(x_3,y_3)<br>$$</p>
+<p>Furthermore, $\mathbb{C}/\Lambda$ has a natural group structure, and we now want to see what it looks like when transported to A. We shall see that it’s algebraic. In other words, if</p>
+<p>$$<br>P_1=(x_1,y_1), \quad P_2=(x_2,y_2), \quad P_3=(x_3,y_3)<br>$$</p>
 <p>and</p>
 <p>$$<br>P_{3}=P_{1}+P_{2}<br>$$</p>
-<p>then we shall express $x_3 , y_3$ as rational functions of $x_1 , y_1$ and $x_2 , y_2$. We shall see that $P_3$ is obtained by taking the line through $P_1,P_2$, intersecting it with the curve, and reflecting the point of intersection through the x-axis.<br>Select $u_1,u_2\in C$ and $\notin L$, and assume $u_1= u_2 (mod \lambda)$. Let a, b be complex numbers such that<br>$$<br>    \begin{gathered}<br>\wp^{\prime}(u_{1}) =a\wp(u_1)+b \<br>\wp^{\prime}(u_{2}) =a\wp(u_2)+b<br>\end{gathered}<br>$$<br>in other words y = ax + b is the line through $\wp^{\prime}(u_{1}) =a\wp(u_1)+b$,and $\wp^{\prime}(u_{2}) =a\wp(u_2)+b$.<br>Then<br>$$<br>    \wp^{\prime}(z)-a\wp(z)-b<br>$$</p>
+<p>then we shall express $x_3 , y_3$ as rational functions of $x_1 , y_1$ and $x_2 , y_2$. We shall see that $P_3$ is obtained by taking the line through $P_1,P_2$, intersecting it with the curve, and reflecting the point of intersection through the x-axis.<br>Select $u_1,u_2\in C$ and $\notin L$, and assume $u_1= u_2 (mod \lambda)$. Let a, b be complex numbers such that</p>
+<p>$$<br>\begin{gathered}<br>\wp^{\prime}(u_{1}) =a\wp(u_1)+b \<br>\wp^{\prime}(u_{2}) =a\wp(u_2)+b<br>\end{gathered}<br>$$</p>
+<p>in other words $ y = ax + b $ is the line through $\wp^{\prime}(u_{1}) =a\wp(u_1)+b$,and $\wp^{\prime}(u_{2}) =a\wp(u_2)+b$.<br>Then</p>
+<p>$$<br>\wp^{\prime}(z)-a\wp(z)-b<br>$$</p>
 <p>has a pole of order 3 at 0, whence it has 3 zeros, counting multiplicities, and tow of these at $u_1,u_2$. If say $u_1$ had multiplicity 2, then</p>
 <p>$$<br>    2u_1+u_2=0 (mod\space \lambda)<br>$$</p>
 <p>and</p>
 <p>$$<br>    u_3=-(u_1+u_2)(mod \space\lambda)<br>$$</p>
 <p>the equation</p>
 <p>$$<br>    4x^{3}-g_{2}x-g_{3}-(a x+b)^{2}=0<br>$$</p>
-<p>has 3 roots. and $$<br>    LHS=4(x-\wp(u_{1}))(x-\wp(u_{2}))(x-\wp(u_{3})).<br>$$<br>and you can get<br>$$<br>    \wp(u_1)+\wp(u_2)+\wp(u_3)=\frac{a^2}{4}<br>$$</p>
-<p>we also have<br>$$<br>  a(\wp(u_{1})-\wp(u_{2}))=\wp^{\prime}(u_{1})-\wp^{\prime}(u_{2})<br>$$<br>So</p>
-<p>$$<br>    \wp(u_{3})=\wp(-(u_{1}+u_{2}))=\wp(u_{1}+u_{2})<br>$$<br>and we get</p>
-<p>$$<br>    \wp(u_1+u_2)=-\wp(u_1)-\wp(u_2)+\frac{1}{4}\bigg(\frac{\wp’(u_1)-\wp’(u_2)}{\wp(u_1)-\wp(u_2)}\bigg)^2<br>$$<br>if we take limit as $u_1\to u_2$ and get<br>$$<br>    \wp(2u)=-2\wp(u)+\frac{1}{4}\bigg(\frac{\wp^{\prime\prime}(u)}{\wp^{\prime}(u)}<br>    \bigg)^2<br>$$</p>
-<h2 id="Endomorphisms-Automorphisms-and-Isomorphisms"><a href="#Endomorphisms-Automorphisms-and-Isomorphisms" class="headerlink" title="Endomorphisms, Automorphisms, and Isomorphisms"></a>Endomorphisms, Automorphisms, and Isomorphisms</h2>
+<p>has 3 roots. and</p>
+<p>$$<br>    LHS=4(x-\wp(u_{1}))(x-\wp(u_{2}))(x-\wp(u_{3})).<br>$$</p>
+<p>and you can get</p>
+<p>$$<br>    \wp(u_1)+\wp(u_2)+\wp(u_3)=\frac{a^2}{4}<br>$$</p>
+<p>we also have</p>
+<p>$$<br>a(\wp(u*{1})-\wp(u_{2}))=\wp^{\prime}(u_{1})-\wp^{\prime}(u_{2})<br>$$</p>
+<p>So</p>
+<p>$$<br>    \wp(u_{3})=\wp(-(u_{1}+u_{2}))=\wp(u_{1}+u_{2})<br>$$</p>
+<p>and we get</p>
+<p>$$<br>    \wp(u_1+u_2)=-\wp(u_1)-\wp(u_2)+\frac{1}{4}\bigg(\frac{\wp’(u_1)-\wp’(u_2)}{\wp(u_1)-\wp(u_2)}\bigg)^2<br>$$</p>
+<p>if we take limit as $u_1\to u_2$ and get</p>
+<p>$$<br> \wp(2u)=-2\wp(u)+\frac{1}{4}\bigg(\frac{\wp^{\prime\prime}(u)}{\wp^{\prime}(u)}<br>    \bigg)^2<br>$$</p>
+<h2 id="geometric-meaning-of-additional-formulae"><a href="#geometric-meaning-of-additional-formulae" class="headerlink" title="geometric meaning of additional formulae"></a>geometric meaning of additional formulae</h2><blockquote>
+<p>Theorem<br>The sum of 3 distinct points $ a, b, c $ on the elliptic curve is zero.</p>
+</blockquote>
+<p>$$<br>a+b+c=0<br>$$</p>
+<p>iff $ a, b, c $ lie on the projective line.</p>
+<p>Proposition:<br>The following formular holds:</p>
+<p>$$<br>\begin{vmatrix}<br>1 &amp;\wp(u+v) &amp; \wp^{\prime }(u+v)\<br>1 &amp;\wp(u) &amp; \wp^{\prime }(u)\<br>1 &amp;\wp(v) &amp;\wp^{\prime }(v)<br>\end{vmatrix}=0<br>$$</p>
+<p>and</p>
+<p>$$<br>\begin{array}{l}(x_1,y_1)=(\wp(u),\wp’(u)),\ (x_2,y_2)=(\wp(v),\wp’(v)),\ (x_3,y_3)=(\wp(u+v),-\wp’(u+v)).\end{array}<br>$$</p>
+
                 
               </div>
             
