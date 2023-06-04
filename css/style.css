@@ -325,7 +325,7 @@ body .h1 {
   letter-spacing: 0.01em;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5em;
+  font-size: 2em;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -420,7 +420,7 @@ body table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
-  font-size: 14px;
+  font-size: 18px;
   overflow: auto;
   display: block;
 }
@@ -429,7 +429,7 @@ body th {
   border-bottom: 1px dashed #666;
   color: #111;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 19px;
 }
 body td {
   padding: 0 8px;
@@ -437,7 +437,7 @@ body td {
 }
 @font-face {
   font-style: normal;
-  font-family: "SubsetOTF", 'Times New Roman', Times, serif, Georgia, serif;
+  font-family: "Centaur", 'Fira Code', sans-serif, monospace;
   src: url("../lib/SubsetOTF/SourceHanSerifSC-VF.ttf") format("truetype");
 }
 *,
@@ -472,7 +472,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  border-top: 2px solid #363533;
+  border-top: 20px solid #363533;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -482,8 +482,8 @@ body {
   background-color: #e2e0de;
   color: #363533;
   font-weight: 400;
-  font-size: large;
-  font-family: "Fira Code", 'Noto Sans SC', sans-serif, monospace;
+  font-size: 19px;
+  font-family: "Centaur", 'Noto Sans SC', sans-serif, monospace;
   line-height: 1.725;
   font-display: swap;
   text-rendering: geometricPrecision;
@@ -628,9 +628,9 @@ body {
 #header #nav {
   color: #d44375;
   letter-spacing: 0.01em;
-  font-weight: 200;
+  font-weight: 500;
   font-style: normal;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 #header #nav ul {
   margin: 0;
@@ -1271,7 +1271,7 @@ article .content .caption {
   color: #666;
   vertical-align: top;
   text-align: center;
-  font-size: 12px;
+  font-size: 17px;
 }
 #footer ul {
   margin: 0;
@@ -1417,8 +1417,8 @@ article .content .caption {
   color: #e2e0de;
   font-display: swap;
   font-weight: 400;
-  font-size: 12.8px;
-  font-family: "Fira Code", 'Noto Sans SC', sans-serif, monospace;
+  font-size: 16px;
+  font-family: "Centaur", 'Noto Sans SC', sans-serif, monospace;
   line-height: 1.725;
   text-rendering: geometricPrecision;
   text-align: center;
