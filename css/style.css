@@ -326,6 +326,7 @@ body .h1 {
   font-weight: 700;
   font-style: normal;
   font-size: 2em;
+  border-collapse: collapse;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -475,6 +476,8 @@ html {
   border-top: 20px solid #363533;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  border-spacing: 0px 0px;
+  border-collapse: collapse;
 }
 body {
   margin: 0;
@@ -487,6 +490,7 @@ body {
   line-height: 1.725;
   font-display: swap;
   text-rendering: geometricPrecision;
+  border-spacing: 0px 0px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -605,6 +609,7 @@ body {
   font-style: normal;
   font-size: 1.5rem;
   line-height: 2rem;
+  border-spacing: 0px 0px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -616,7 +621,7 @@ body {
 #header #logo {
   display: inline-block;
   float: left;
-  margin-right: 20px;
+  margin-right: 18px;
   width: 50px;
   height: 50px;
   border-radius: 5px;
@@ -631,6 +636,7 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: 1rem;
+  border-spacing: 0px 0px;
 }
 #header #nav ul {
   margin: 0;
@@ -1266,7 +1272,7 @@ article .content .caption {
 #footer {
   position: absolute;
   bottom: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   width: 100%;
   color: #666;
   vertical-align: top;
