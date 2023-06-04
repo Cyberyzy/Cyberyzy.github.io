@@ -351,6 +351,7 @@ body h4,
 body h5,
 body h6 {
   display: inline;
+  border-bottom: 1px dashed #666;
   text-decoration: none;
   color: #666;
   font-weight: bold;
@@ -419,7 +420,7 @@ body table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
-  font-size: 12px;
+  font-size: 14px;
   overflow: auto;
   display: block;
 }
@@ -428,7 +429,7 @@ body th {
   border-bottom: 1px dashed #666;
   color: #111;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 15px;
 }
 body td {
   padding: 0 8px;
@@ -436,7 +437,7 @@ body td {
 }
 @font-face {
   font-style: normal;
-  font-family: "SubsetOTF";
+  font-family: "SubsetOTF", 'Times New Roman', Times, serif, Georgia, serif;
   src: url("../lib/SubsetOTF/SourceHanSerifSC-VF.ttf") format("truetype");
 }
 *,
@@ -482,8 +483,9 @@ body {
   color: #363533;
   font-weight: 400;
   font-size: large;
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-family: "Fira Code", 'Noto Sans SC', sans-serif, monospace;
   line-height: 1.725;
+  font-display: swap;
   text-rendering: geometricPrecision;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -1415,8 +1417,8 @@ article .content .caption {
   color: #e2e0de;
   font-display: swap;
   font-weight: 400;
-  font-size: 11.200000000000001px;
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-size: 12.8px;
+  font-family: "Fira Code", 'Noto Sans SC', sans-serif, monospace;
   line-height: 1.725;
   text-rendering: geometricPrecision;
   text-align: center;
@@ -1597,7 +1599,7 @@ pre {
   border: 1px dotted #666;
   border-radius: 4px;
   font-size: 13px;
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-family: "Fira Code", 'Noto Sans SC', sans-serif, monospace;
   line-height: 22px;
   -webkit-border-radius: 4px;
 }
@@ -1618,7 +1620,7 @@ code {
   padding: 10px 15px;
   border-radius: 4px;
   background: #dedcd9;
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-family: "Fira Code", 'Noto Sans SC', sans-serif, monospace;
   -webkit-border-radius: 4px;
 }
 .highlight figcaption {
