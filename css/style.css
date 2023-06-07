@@ -437,7 +437,7 @@ body td {
 }
 @font-face {
   font-style: normal;
-  font-family: "Times New Roman", 'Fira Code', sans-serif, monospace;
+  font-family: "Times New Roman", 'STZhongsong', sans-serif, monospace;
   src: url("../lib/SubsetOTF/SourceHanSerifSC-VF.ttf") format("truetype");
 }
 *,
@@ -483,7 +483,7 @@ body {
   color: #383838;
   font-weight: 400;
   font-size: 19px;
-  font-family: "Centaur", 'Noto Sans SC', sans-serif, monospace;
+  font-family: "Times New Roman", 'STZhongsong', sans-serif, monospace;
   line-height: 1.725;
   font-display: swap;
   text-rendering: geometricPrecision;
@@ -1062,7 +1062,7 @@ body {
   padding: 0;
 }
 .post-list .post-item {
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   margin-left: 0;
   list-style-type: none;
 }
@@ -1420,7 +1420,7 @@ article .content .caption {
   font-display: swap;
   font-weight: 400;
   font-size: 16px;
-  font-family: "Centaur", 'Noto Sans SC', sans-serif, monospace;
+  font-family: "Times New Roman", 'STZhongsong', sans-serif, monospace;
   line-height: 1.725;
   text-rendering: geometricPrecision;
   text-align: center;
@@ -1586,7 +1586,7 @@ pre {
   border: 1px dotted #666;
   border-radius: 4px;
   font-size: 13px;
-  font-family: "Fira Code", 'Noto Sans SC', sans-serif, monospace;
+  font-family: "Times New Roman", 'STZhongsong', sans-serif, monospace;
   line-height: 22px;
   -webkit-border-radius: 4px;
 }
@@ -1607,7 +1607,7 @@ code {
   padding: 10px 15px;
   border-radius: 4px;
   background: #fafafa;
-  font-family: "Fira Code", 'Noto Sans SC', sans-serif, monospace;
+  font-family: "Times New Roman", 'STZhongsong', sans-serif, monospace;
   -webkit-border-radius: 4px;
 }
 .highlight figcaption {
