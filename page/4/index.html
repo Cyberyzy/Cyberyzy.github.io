@@ -100,10 +100,60 @@
 </header>
 
         
-        <section id="about" class="p-note">
+        <head>
+  <meta charset="utf-8"> 
+  <style>
+  #modal {
+    display: none;
+  }
+  .modal {
+      margin: auto;
+      padding-top: 5%;
+      width: 50%;
+      height: 80%;
+      z-index: 1;
+  }
+  
+  .modal img {
+      animation-name: zoom;
+      animation-duration: 0.3s;
+      display: block;
+      padding: 10px;
+      margin: auto;
+      max-width: 100%;
+      max-height: 100%;
+      box-shadow: 0 2px 6px rgb(0, 0, 0, 0.2), 0 10px 20px rgb(0, 0, 0, 0.2);
+      border-radius: 12px;
+      border: 1px solid white;
+  }
+  
+  @keyframes zoom {
+      from {transform: scale(0.1)}
+      to {transform: scale(1)}
+  }
+  
+  .thum-img {
+      float: left;
+      width: 130px;
+      height: 130px;
+      margin: auto;
+      padding: 5px;
+  }
+  </style>
+</head>
+<section id="about" class="p-note">
   <hr size = 1 color = gray width = 700>
   <span>
-  <img src="/images/logo2.jpg" align="left" width="130px" height="130px" hspace="5" vspace="5" border-radius: 10px >
+    <div class="demo">
+      <div style='position:fixed' id='modal' class="status">
+        <div class='modal' id='modalw'>
+            <img id='bgImg' />
+        </div>
+        </div>
+    </div>    
+    <div>
+  <img onclick='showBgImg(this)' class='thum-img'  src="/images/logo2.jpg" >
+</div>
     Hi, there. I am currently a sophomore from <a target="_blank" rel="noopener" href="https://www.eea.tsinghua.edu.cn/en/"> Department of Electrical Engineering</a> at Tsinghua University, with a minor program of mathematics.
 I am interested in math and statistics, especially probability theory. This semester I am studying complex analysis and my course notes are uploaded.
 Next semester, I decide to take Statistical inference and functional analysis, and I will upgrade my course notes.
@@ -113,68 +163,6 @@ Next semester, I decide to take Statistical inference and functional analysis, a
     👋You can contact me through: <a href="mailto:zy-yang21@mails.tsinghua.edu.cn">Email</a>, <a href = "https://github.com/Cyberyzy">GitHub</a>.
    </span>
    <hr size = 1 color = gray width = 700>
-
- <!-- 
-    <p>
-      Find me on
-      
-      
-      
-        
-        
-          <a class="icon u-url" target="_blank" rel="noopener me" href="http://github.com/probberechts/cactus-dark" aria-label="github" title="github">
-            <i class="fa-brands fa-github"></i><!--
-      </a>
-    
-    , 
-        
-      
-        
-        
-          <a class="icon u-url" target="_blank" rel="noopener me" href="/" aria-label="twitter" title="twitter">
-            <i class="fa-brands fa-twitter"></i><!--
-      </a>
-    
-    , 
-        
-      
-        
-        
-          <a class="icon u-url" target="_blank" rel="noopener me" href="/" aria-label="facebook" title="facebook">
-            <i class="fa-brands fa-facebook"></i><!--
-      </a>
-    
-    , 
-        
-      
-        
-        
-          <a class="icon u-email" target="_blank" rel="noopener" href="mailto:name@email.com" aria-label="mail" title="mail">
-            <i class="fa-solid fa-envelope"></i></a>
-        
-    , 
-        
-      
-        
-        
-          <a class="icon u-url" target="_blank" rel="noopener me" href="https://mastodon.social/@alice" aria-label="mastodon.social" title="mastodon.social">
-            <i class="fa-brands fa-mastodon"></i><!--
-      </a>
-    
-     and 
-        
-      
-        
-        
-          <a class="icon u-url" target="_blank" rel="noopener me" href="https://fosstodon.org/@alice" aria-label="fosstodon.org" title="fosstodon.org">
-            <i class="fa-brands fa-mastodon"></i><!--
-      </a>
-    
-    .
-        
-      
-    </p>
-   -->
 </section>
 
 <!-- <section id="writing">
@@ -305,7 +293,41 @@ Next semester, I decide to take Statistical inference and functional analysis, a
 </section>
 
 
+<script>
+  var modal = document.getElementById('modal');
+  var bgImg = document.getElementById('bgImg');
 
+  function showBgImg(e) {
+  modal.style.display = 'block';
+  bgImg.src = e.src;
+}
+bgImg.onclick = function() {
+  modal.style.display = 'none';
+}
+document.addEventListener('mousedown', (e) => {
+  console.log(e);
+})
+let a = document.getElementsByClassName('demo')[0]
+let arr = []
+arr.push(a)	 // 先推入当前元素
+getParent(a) // 执行递归
+arr.push(window) // 最后再加一个window
+function getParent(obj) {
+    if (obj.parentNode) { // 往树的上层追溯，直到最上层
+        arr.push(obj.parentNode)
+    } else {
+        return
+	}
+    getParent(obj.parentNode) // 递归追溯源头
+}
+let ObjStatus = document.getElementsByClassName('status')[0]
+document.addEventListener('mousedown', (e) => {
+    let t = document.getElementsByClassName('tdemo')[0] // 最外层元素
+    if (!e.path.includes(t)) {
+      modalw.style.display = 'none';
+	}
+})
+</script>
         
         <br><br><br>
 <footer id="footer">

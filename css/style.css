@@ -502,11 +502,28 @@ body {
   height: 120px;
   display: table-cell;
 }
-.div1 img {
+.span1 img {
   max-width: 100%;
   max-height: 100%;
   display: inline-block;
   margin: auto;
+}
+.imgPreview {
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%; /*容器占满整个屏幕*/
+  height: 100%;
+  position: fixed;
+  background: rgba(0,0,0,0.5);
+}
+.imgPreview img {
+  z-index: 100;
+  width: 60%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 p {
   hyphens: auto;
