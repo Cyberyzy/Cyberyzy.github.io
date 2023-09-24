@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap'); */
+body {
+  /* background-color: var(--background); */
+  /* font-family: "Fira Code", monospace; */
+  text-align: left;
+  font-family: 'Martel', serif;
+  /* font-family: Georgia, serif; */
+  /* line-height: 1.5; */
+  /* max-width: 33em; */
+}
+.short-bio {
+  margin-bottom: 3em;
+  margin-top: 3em;
+}
+h1 {
+  font-weight: 500;
+  font-family: 'Cormorant Garamond', serif;
+  margin-top: 100px;
+  /* margin-bottom: 100px; */
+  /* color: var(--foreground); */
+  height: fit-content;
+  max-height: 130px;
+  color: black;
+}
+#emailStyle {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 0.7em;
+  color: rgb(0, 0, 0);
+  padding: 1px 1px 1px 1px;
+}
+h2 {
+  font-weight: 300;
+  font-size: 27px;
+  font-family: 'Cormorant Garamond', serif;
+  /* font-family: 'Poiret One', serif; */
+}
+h1 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #f4f6fd;
+}
+.page-header {
+  margin: 20px 0 20px;
+  line-height: 20px;
+}
+.container {
+  margin-right: auto; /* 1 */
+  margin-left: auto; /* 1 */
+
+  max-width: 875px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left: 10px; /* 3 */
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\2212';
+}
+
+a {
+  color: #987e89;
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  /* color: #68436F; */
+
+  /* display: inline-block; */
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+table,
+th,
+td {
+  border: 1px solid #eeeeee;
+  border-collapse: collapse;
+  padding: 10px;
+}
+ul {
+  display: block;
+  margin-left: -10px;
+  list-style-type: bullet;
+}
+
+ul li {
+  display: block;
+  position: relative;
+}
+ul li:not(:last-child) {
+  margin-bottom: 4px;
+}
+ul li:before {
+  content: '';
+  position: absolute;
+  top: 1.2em;
+  left: -20px;
+  margin-top: -0.7em;
+  background: #987e89;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+strong {
+  font-family: Martel;
+  font-weight: 700;
+}

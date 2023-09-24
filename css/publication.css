@@ -1,0 +1,23 @@
+.pub {
+  padding: 30px 50px;
+  margin: 0 auto;
+  width: 800px;
+  position: relative;
+  top: 80px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+}
+.pubs .publication .pub-title {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.pubs .publication .pub-content {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}

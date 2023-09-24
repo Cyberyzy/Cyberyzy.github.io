@@ -1,177 +1,73 @@
-<!DOCTYPE html>
-<html lang=en>
-<head>
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="整理一些关于共形映射的算例。 初等函数 sinz  将区域 $$A&#x3D;{|Re(z)|&lt;\frac{\pi}{2}}$$ 映到上半平面  arcsinz  将区域 $$A&#x3D;{|Im(z)|&lt;\frac{\pi}{2},Re(z)&gt;0}$$ 映到上半平面  分式线性变换$$F(z)&#x3D;\frac&amp;#123;i-z&amp;#125;&amp;#123;z+i&amp;#125;:H\to D\\ G(z)&#x3D;i">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Schwarz-Christoffel Integral">
-<meta property="og:url" content="https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/index.html">
-<meta property="og:site_name" content="Bievenue sur le blog de yzy">
-<meta property="og:description" content="整理一些关于共形映射的算例。 初等函数 sinz  将区域 $$A&#x3D;{|Re(z)|&lt;\frac{\pi}{2}}$$ 映到上半平面  arcsinz  将区域 $$A&#x3D;{|Im(z)|&lt;\frac{\pi}{2},Re(z)&gt;0}$$ 映到上半平面  分式线性变换$$F(z)&#x3D;\frac&amp;#123;i-z&amp;#125;&amp;#123;z+i&amp;#125;:H\to D\\ G(z)&#x3D;i">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/a.png">
-<meta property="article:published_time" content="2023-05-26T13:42:41.000Z">
-<meta property="article:modified_time" content="2023-06-07T13:14:22.025Z">
-<meta property="article:author" content="zy-yang">
-<meta property="article:tag" content="math">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/a.png">
-    
-    
-      
-        
-          <link rel="shortcut icon" href="/images/favicon.ico">
-        
-      
-      
-        
-          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
-        
-      
-      
-        
-          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-        
-      
-    
-    <!-- title -->
-    <title>Schwarz-Christoffel Integral</title>
-    <!-- async scripts -->
-    <!-- Google Analytics -->
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
 
-
-    <!-- Umami Analytics -->
-
-
-    <!-- styles -->
-    
-<link rel="stylesheet" href="/css/style.css">
-
-    <!-- persian styles -->
-    
-    <!-- rss -->
-    
-    
-	<!-- mathjax -->
-	
-		<script type="text/x-mathjax-config">
-		  MathJax.Hub.Config({
-			tex2jax: {
-			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-			  inlineMath: [['$','$']]
-			}
-		  });
-		</script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
-	
-</head>
-
-<body class="max-width mx-auto px3 ltr">
-    
-      <div id="header-post">
-  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
-    <span id="nav">
-      <ul>
-        <!--
-       --><li><a href="/">Home</a></li><!--
-     --><!--
-       --><li><a href="/about/">About</a></li><!--
-     --><!--
-       --><li><a href="/archives/">Writing</a></li><!--
-     --><!--
-       --><li><a target="_blank" rel="noopener" href="http://github.com/Cyberyzy">Projects</a></li><!--
-     --><!--
-       --><li><a href="/links/">links</a></li><!--
-     -->
-      </ul>
-    </span>
-    <br/>
-    <span id="actions">
-      <ul>
-        
-        <li><a class="icon" aria-label="Previous post" href="/2023/06/01/6%E6%9C%88/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
-        
-        
-        <li><a class="icon" aria-label="Next post" href="/2023/05/25/MontelThm/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
-        
-        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
-      </ul>
-      <span id="i-prev" class="info" style="display:none;">Previous post</span>
-      <span id="i-next" class="info" style="display:none;">Next post</span>
-      <span id="i-top" class="info" style="display:none;">Back to top</span>
-      <span id="i-share" class="info" style="display:none;">Share post</span>
-    </span>
-    <br/>
-    <div id="share" style="display: none">
-      <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&text=Schwarz-Christoffel Integral"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&title=Schwarz-Christoffel Integral"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&is_video=false&description=Schwarz-Christoffel Integral"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Schwarz-Christoffel Integral&body=Check out this article: https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&title=Schwarz-Christoffel Integral"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&title=Schwarz-Christoffel Integral"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&title=Schwarz-Christoffel Integral"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&title=Schwarz-Christoffel Integral"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&name=Schwarz-Christoffel Integral&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&t=Schwarz-Christoffel Integral"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-    <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E7%AD%89%E5%87%BD%E6%95%B0"><span class="toc-number">1.</span> <span class="toc-text">初等函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Schwarz-Lemma"><span class="toc-number">2.</span> <span class="toc-text">Schwarz Lemma</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Riemann-Mapping-Theorem"><span class="toc-number">3.</span> <span class="toc-text">Riemann Mapping Theorem</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Proof"><span class="toc-number">3.1.</span> <span class="toc-text">Proof</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#step-1-%E4%BB%BB%E6%84%8F%E5%8D%95%E8%BF%9E%E9%80%9A%E5%8C%BA%E5%9F%9F%E5%8F%AF%E4%BB%A5%E5%85%B1%E5%BD%A2%E7%AD%89%E4%BB%B7%E5%88%B0%E5%8C%85%E5%90%AB%E5%8E%9F%E7%82%B9%E7%9A%84%E5%8D%95%E4%BD%8D%E5%9C%86%E7%9A%84%E5%AD%90%E9%9B%86"><span class="toc-number">3.1.1.</span> <span class="toc-text">step 1. 任意单连通区域可以共形等价到包含原点的单位圆的子集</span></a></li></ol></li></ol></li></ol>
-    </div>
-  </span>
-</div>
-
-    
-    <div class="content index py4 ">
-        
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    
-    <h1 class="posttitle p-name" itemprop="name headline">
-        Schwarz-Christoffel Integral
-    </h1>
-
-
-
-    <div class="meta">
-      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span class="p-name" itemprop="name">zy-yang</span>
-      </span>
-      
-    <div class="postdate">
-      
-        <time datetime="2023-05-26T13:42:41.000Z" class="dt-published" itemprop="datePublished">2023-05-26</time>
-        
-      
-    </div>
-
-
-      
-
-      
-    <div class="article-tag">
-        <i class="fa-solid fa-tag"></i>
-        <a class="p-category" href="/tags/math/" rel="tag">math</a>
-    </div>
-
-
-    </div>
-  </header>
+  <!-- 引入配置文件 -->
+  <!-- 
+<link rel="stylesheet" href="/css/index.css">
+ 
   
+<link rel="stylesheet" href="/css/header.css">
+ -->
+  
+<link rel="stylesheet" href="/css/styl.css">
 
-  <div class="content e-content" itemprop="articleBody">
-    <p>整理一些关于共形映射的算例。</p>
+  <!-- 字体图片库 -->
+  
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+  <!-- 代码高亮库 -->
+  
+<link rel="stylesheet" href="/lib/highlight/styles/atom-one-dark.min.css">
+ 
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+  <body>
+
+    <div id="main">
+      <!-- 引入侧边栏 -->
+      <header class="header">
+  <ul class="menu">
+    
+    <a class="menu-item">
+      <a href="/" class="menu-item-link">Home</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/publication/" class="menu-item-link">Publication</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/about/" class="menu-item-link">About</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/archives/" class="menu-item-link">Archives</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/en/" class="menu-item-link">中文版本</a>
+    <a>
+    
+  </ul>
+</header>
+
+      <!-- 引入正文 -->
+
+          <div id="content"><section class="post">
+  <header>
+    <span id="post-title" class="post-title">Schwarz-Christoffel Integral</span>
+    <span id="post-author" class="post-author">author: </span>
+    <span id="post-date" class="post-data">2023-05-26 21:42:41</span>
+  </header>
+  <hr class="divider" />
+  <!-- 分割线 -->
+  <div id="article" class="article"><p>整理一些关于共形映射的算例。</p>
 <h2 id="初等函数"><a href="#初等函数" class="headerlink" title="初等函数"></a>初等函数</h2><ol>
 <li>sinz</li>
 </ol>
@@ -219,149 +115,30 @@ $$</li>
 <p>$$<br>\pi:\mathfrak{p}\longrightarrow \mathbf{x}<br>$$</p>
 <p>和</p>
 <p>$$<br>\pi_2:\mathbf{x}\longrightarrow z<br>$$</p>
-<p>简单来说，如下图<br><img src="/2023/05/26/SchwarzChristoffel/a.png" alt="&quot;lolololol&quot;"></p>
-
-  </div>
-</article>
-
-
-
-        
-          <div id="footer-post-container">
-  <div id="footer-post">
-
-    <div id="nav-footer" style="display: none">
-      <ul>
-        
-          <li><a href="/">Home</a></li>
-        
-          <li><a href="/about/">About</a></li>
-        
-          <li><a href="/archives/">Writing</a></li>
-        
-          <li><a target="_blank" rel="noopener" href="http://github.com/Cyberyzy">Projects</a></li>
-        
-          <li><a href="/links/">links</a></li>
-        
-      </ul>
-    </div>
-
-    <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E7%AD%89%E5%87%BD%E6%95%B0"><span class="toc-number">1.</span> <span class="toc-text">初等函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Schwarz-Lemma"><span class="toc-number">2.</span> <span class="toc-text">Schwarz Lemma</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Riemann-Mapping-Theorem"><span class="toc-number">3.</span> <span class="toc-text">Riemann Mapping Theorem</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Proof"><span class="toc-number">3.1.</span> <span class="toc-text">Proof</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#step-1-%E4%BB%BB%E6%84%8F%E5%8D%95%E8%BF%9E%E9%80%9A%E5%8C%BA%E5%9F%9F%E5%8F%AF%E4%BB%A5%E5%85%B1%E5%BD%A2%E7%AD%89%E4%BB%B7%E5%88%B0%E5%8C%85%E5%90%AB%E5%8E%9F%E7%82%B9%E7%9A%84%E5%8D%95%E4%BD%8D%E5%9C%86%E7%9A%84%E5%AD%90%E9%9B%86"><span class="toc-number">3.1.1.</span> <span class="toc-text">step 1. 任意单连通区域可以共形等价到包含原点的单位圆的子集</span></a></li></ol></li></ol></li></ol>
-    </div>
-
-    <div id="share-footer" style="display: none">
-      <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&text=Schwarz-Christoffel Integral"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&title=Schwarz-Christoffel Integral"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&is_video=false&description=Schwarz-Christoffel Integral"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Schwarz-Christoffel Integral&body=Check out this article: https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&title=Schwarz-Christoffel Integral"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&title=Schwarz-Christoffel Integral"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&title=Schwarz-Christoffel Integral"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&title=Schwarz-Christoffel Integral"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&name=Schwarz-Christoffel Integral&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://cyberyzy.github.io/2023/05/26/SchwarzChristoffel/&t=Schwarz-Christoffel Integral"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-
-    <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
-    </div>
-
-  </div>
+<p>简单来说，如下图<br><img src="a.png" alt="&quot;lolololol&quot;"></p>
+</div>
+</section>
 </div>
 
-        
-        <br><br><br>
-<footer id="footer">
-  <div class="footer-left">
-    Copyright &copy;
-    
-    
-    2022-2023
-    zy-yang
-  </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-        <!--
-       --><li><a href="/">Home</a></li><!--
-     --><!--
-       --><li><a href="/about/">About</a></li><!--
-     --><!--
-       --><li><a href="/archives/">Writing</a></li><!--
-     --><!--
-       --><li><a target="_blank" rel="noopener" href="http://github.com/Cyberyzy">Projects</a></li><!--
-     --><!--
-       --><li><a href="/links/">links</a></li><!--
-     -->
-      </ul>
-    </nav>
-  </div>
-  <br>
-  <div>
-    <i>Behind the simple order of 0 and 1, there are infinitely many possibilities that give you rejoice.——Zhihu</i>
-  </div>
-</footer>
+    <!-- 引入 js 文件 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       
 
-    </div>
-    <!-- styles -->
+<script src="/js/head.js"></script>
+ 
 
+<script src="/js/prism.js"></script>
 
-
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
-
-
-    <!-- jquery -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
-
-
-
-
-<!-- clipboard -->
-
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
-  
-  <script type="text/javascript">
-  $(function() {
-    // copy-btn HTML
-    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
-    btn += '<i class="fa-regular fa-clone"></i>';
-    btn += '</span>';
-    // mount it!
-    $(".highlight table").before(btn);
-    var clip = new ClipboardJS('.btn-copy', {
-      text: function(trigger) {
-        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
-      }
-    });
-    clip.on('success', function(e) {
-      e.trigger.setAttribute('aria-label', "Copied!");
-      e.clearSelection();
-    })
-  })
-  </script>
-
-
+ 
 <script src="/js/main.js"></script>
+ 
+ 
+<script src="/js/scripta.js"></script>
+ 
+    <script>
+      Prism.highlightAll();
+    </script>
 
-<!-- search -->
 
-<!-- Baidu Analytics -->
-
-<!-- Cloudflare Analytics -->
-
-<!-- Disqus Comments -->
-
-<!-- utterances Comments -->
-
-</body>
+  </body>
 </html>

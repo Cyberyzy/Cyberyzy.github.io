@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 25px 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.34s;
+}
+.header .menu {
+  margin: 0;
+  padding: 0;
+}
+.header .menu .menu-item {
+  display: inline-block;
+  margin-right: 10px;
+  flex-shrink: 0;
+  letter-spacing: 1px;
+}
+.header .menu .menu-item-link {
+  color: rgba(0, 0, 0, 0.385);
+  text-decoration: none;
+  flex-shrink: 0;
+  padding: 1em;
+}
+.header .menu .menu-item-link:hover {
+  color: #444;
+  flex-shrink: 0;
+  transition: 0.34s;
+}
+
+.bian {
+  padding: 15px 100px;
+  background-color: #ebebeb;
+  z-index: 90;
+}
