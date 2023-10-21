@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+
+  <!-- 引入配置文件 -->
+  <!-- 
+<link rel="stylesheet" href="/css/index.css">
+ 
+  
+<link rel="stylesheet" href="/css/header.css">
+ -->
+  
+<link rel="stylesheet" href="/css/styl.css">
+
+  <!-- 字体图片库 -->
+  
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+  <!-- 代码高亮库 -->
+  
+<link rel="stylesheet" href="/lib/highlight/styles/atom-one-dark.min.css">
+ 
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+  <body>
+
+    <div id="main">
+      <!-- 引入侧边栏 -->
+      <header class="header">
+  <ul class="menu">
+    
+    <a class="menu-item">
+      <a href="/" class="menu-item-link">Home</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/publication/" class="menu-item-link">Publication</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/about/" class="menu-item-link">About</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/archives/" class="menu-item-link">Archives</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/en/" class="menu-item-link">中文版本</a>
+    <a>
+    
+  </ul>
+</header>
+
+      <!-- 引入正文 -->
+
+          <div id="content"><section class="post">
+  <header>
+    <span id="post-title" class="post-title"></span>
+    <span id="post-author" class="post-author">author: </span>
+    <span id="post-date" class="post-data">2023-10-07 20:29:45</span>
+  </header>
+  <hr class="divider" />
+  <!-- 分割线 -->
+  <div id="article" class="article"><h1 id="Chapter2"><a href="#Chapter2" class="headerlink" title="Chapter2"></a>Chapter2</h1><h2 id="Buck-conveter"><a href="#Buck-conveter" class="headerlink" title="Buck conveter"></a>Buck conveter</h2><ol>
+<li>定义: 降压变换器(buck conveter)是一种利用电感、电容和无功率损耗的开关构成的器件，能够产生pwm波</li>
+</ol>
+<p>Remark：基础的降压变换器类似于在输出和输入间加一个单刀双掷开关，当输入为Vg直流，那么开关掷1则输出为Vg，否则为0.</p>
+<p>类似的，可以在输入与输出之间加滤波</p>
+<ol>
+<li>低通滤波</li>
+</ol>
+<p>输出v(t)即为输入Vg的直流信号，其均值为<br>$$<br>    v(t)=\frac{1}{T_s}\int_{0}^{T_s}V_g(t)dt\approx DV<br>$$<br>其中$ D $ 为占空比。<br>换句话说，$ v_{out}=Dv_{in} $, 输出可调。</p>
+<p>对于不同的RLC组合，有一些通用的分析办法</p>
+<h2 id="小纹波近似-small-ripple-approximation"><a href="#小纹波近似-small-ripple-approximation" class="headerlink" title="小纹波近似(small-ripple approximation)"></a>小纹波近似(small-ripple approximation)</h2><p>核心认为<br>$$<br>    v(t)=V+v_{ripple}(t)<br>$$<br>即输出分解成直流+扰动</p>
+<p>例如低通滤波:<br>开关为1档时，电感上的电压为<br>$$<br>    v_{L}(t)=V_{g}(t)-v(t)\approx V_{g}(t)-V=L\frac{di}{dt}<br>$$<br>换句话说，$ i\propto V_g(t)$</p>
+<p>第二个区间内，$ v_L=-V $,即$ \frac{di}{dt}=\frac{-V}{L} $</p>
+<p>一个区间内，电流纹波$ \Delta i=\frac{V_g-V}{2L}DT_s $<br>以上是稳态情况下电压变换器的解，如果对于初始状态，有如下的分析：</p>
+<p>Key point: 一个周期内流过电感的电流为0,电容上的电压为0，即<br>$$<br>    \frac{1}{T_s}\int_{0}^{T_s}v_L(t)dt=0\<br>    \frac{1}{T_s}\int_{0}^{T_s}i_c(t)dt=0<br>$$</p>
+<h2 id="升压变换器-Boost-converter"><a href="#升压变换器-Boost-converter" class="headerlink" title="升压变换器(Boost converter)"></a>升压变换器(Boost converter)</h2><p><img src="image.png" alt="Alt text"><br><img src="image-1.png" alt="Alt text"><br>对于图(a)有<br>$$<br>    v_L(t)=V_g(t)\<br>    i_c(t)=-\frac{V}{R}<br>$$<br>对于图(b)<br>$$<br>    v_L(t)=V_g(t)-V\<br>    i_c(t)=i_L-\frac{V}{R}=I-\frac{V}{R}<br>$$<br>一个周期内流过电感的电流积分为0.得到<br>$$<br>V_gDT_s+D^{\prime}T_s(V_g-V)=0<br>$$<br>得到$ M=\dfrac{1}{1-D}=\dfrac{IR}{V_g} $</p>
+</div>
+</section>
+</div>
+
+    <!-- 引入 js 文件 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       
+
+<script src="/js/head.js"></script>
+ 
+
+<script src="/js/prism.js"></script>
+
+ 
+<script src="/js/main.js"></script>
+ 
+ 
+<script src="/js/scripta.js"></script>
+ 
+    <script>
+      Prism.highlightAll();
+    </script>
+
+    
+
+  </body>
+</html>

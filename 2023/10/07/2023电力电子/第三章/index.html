@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+
+  <!-- 引入配置文件 -->
+  <!-- 
+<link rel="stylesheet" href="/css/index.css">
+ 
+  
+<link rel="stylesheet" href="/css/header.css">
+ -->
+  
+<link rel="stylesheet" href="/css/styl.css">
+
+  <!-- 字体图片库 -->
+  
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+  <!-- 代码高亮库 -->
+  
+<link rel="stylesheet" href="/lib/highlight/styles/atom-one-dark.min.css">
+ 
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+  <body>
+
+    <div id="main">
+      <!-- 引入侧边栏 -->
+      <header class="header">
+  <ul class="menu">
+    
+    <a class="menu-item">
+      <a href="/" class="menu-item-link">Home</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/publication/" class="menu-item-link">Publication</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/about/" class="menu-item-link">About</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/archives/" class="menu-item-link">Archives</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/en/" class="menu-item-link">中文版本</a>
+    <a>
+    
+  </ul>
+</header>
+
+      <!-- 引入正文 -->
+
+          <div id="content"><section class="post">
+  <header>
+    <span id="post-title" class="post-title"></span>
+    <span id="post-author" class="post-author">author: </span>
+    <span id="post-date" class="post-data">2023-10-07 20:29:45</span>
+  </header>
+  <hr class="divider" />
+  <!-- 分割线 -->
+  <div id="article" class="article"><h1 id="第三章——变换器的损耗建模"><a href="#第三章——变换器的损耗建模" class="headerlink" title="第三章——变换器的损耗建模"></a>第三章——变换器的损耗建模</h1><p>当考虑电子元件固有电阻时，输入输出之间的转换需要重新建模。<br><img src="image-2.png" alt="Alt text"><br>考虑升压变换器电感的电阻$ R_L $， 则方程可以列写为<br>$$<br>    v_L(t)=V_g(t)-IR_L\<br>    i_c(t)=-\frac{V}{R}<br>$$<br>和<br>$$<br>    v_L(t)=V_g(t)-IR_L-V\<br>    i_c(t)=I-\frac{V}{R}<br>$$<br>解得<br>$$<br>    \frac{V}{V_g}=\frac{1}{D^{\prime}}\frac{1}{1+\frac{R_L}{RD^{\prime2}}}<br>$$</p>
+<h2 id="效率计算"><a href="#效率计算" class="headerlink" title="效率计算"></a>效率计算</h2><p>$$<br>    P_in=V_gI,\quad P_{out}=VID^{\prime}<br>$$<br>则效率<br>$$<br>    \eta=\frac{P_{in}}{P_{out}}=\frac{1}{1+\frac{R_L}{RD^{\prime2}}}<br>$$</p>
+</div>
+</section>
+</div>
+
+    <!-- 引入 js 文件 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       
+
+<script src="/js/head.js"></script>
+ 
+
+<script src="/js/prism.js"></script>
+
+ 
+<script src="/js/main.js"></script>
+ 
+ 
+<script src="/js/scripta.js"></script>
+ 
+    <script>
+      Prism.highlightAll();
+    </script>
+
+    
+
+  </body>
+</html>

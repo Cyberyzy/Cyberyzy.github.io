@@ -1,0 +1,13 @@
+.page-nav {
+  position: absolute;
+  display: block;
+  width: 100px;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 20px;
+  height: fit-content;
+  text-align: center;
+  margin: 0 auto;
+}

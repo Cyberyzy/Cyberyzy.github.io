@@ -1,11 +1,13 @@
 .archive {
   padding: 30px 50px;
   margin: 0 auto;
-  width: 750px;
+  width: 500px;
   position: relative;
   top: 80px;
+  height: fit-content;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
+  line-height: 1.2;
 }
 .archive .archive-title {
   font-size: 40px;

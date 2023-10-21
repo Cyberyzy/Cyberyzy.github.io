@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+
+  <!-- 引入配置文件 -->
+  <!-- 
+<link rel="stylesheet" href="/css/index.css">
+ 
+  
+<link rel="stylesheet" href="/css/header.css">
+ -->
+  
+<link rel="stylesheet" href="/css/styl.css">
+
+  <!-- 字体图片库 -->
+  
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+  <!-- 代码高亮库 -->
+  
+<link rel="stylesheet" href="/lib/highlight/styles/atom-one-dark.min.css">
+ 
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+  <body>
+
+    <div id="main">
+      <!-- 引入侧边栏 -->
+      <header class="header">
+  <ul class="menu">
+    
+    <a class="menu-item">
+      <a href="/" class="menu-item-link">Home</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/publication/" class="menu-item-link">Publication</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/about/" class="menu-item-link">About</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/archives/" class="menu-item-link">Archives</a>
+    <a>
+    
+    <a class="menu-item">
+      <a href="/en/" class="menu-item-link">中文版本</a>
+    <a>
+    
+  </ul>
+</header>
+
+      <!-- 引入正文 -->
+
+          <div id="content"><section class="post">
+  <header>
+    <span id="post-title" class="post-title"></span>
+    <span id="post-author" class="post-author">author: </span>
+    <span id="post-date" class="post-data">2023-10-07 20:29:45</span>
+  </header>
+  <hr class="divider" />
+  <!-- 分割线 -->
+  <div id="article" class="article"><h1 id="三相整流电路"><a href="#三相整流电路" class="headerlink" title="三相整流电路"></a>三相整流电路</h1><h2 id="三相半波可控整流电路"><a href="#三相半波可控整流电路" class="headerlink" title="三相半波可控整流电路"></a>三相半波可控整流电路</h2><p>一次侧 Y 接，二次侧 delta 接。避免三次谐波流入电网</p>
+<p>分析时考虑三个二极管对应的相电压中哪一个的值最大<br><img src="image-3.png" alt="三相半波可控整流电路"></p>
+<p>在相电压的交点$\omega t_1,\omega t_2, \omega t_3$处都有二极管换相，称之为自然换相点。<br>将其作为晶闸管触发角$ \alpha $ 的起点</p>
+<p>使$ \alpha $ 增大，当其为30时负载电流处于连续喝断续的临界状态，如果&gt;30则负载电流断续。当其为150，整流输出电压为0。</p>
+<p>!!! note remark<br>    分析时让 alpha 逐渐增大，关键的点是零点和交点，零点为一管关断和下一管开启的点。 也可通过$u_d$ 波形中正负面积相等时来判断</p>
+<p>整流电压均值计算</p>
+<ul>
+<li><p>连续时($\alpha\leq 30^\circ$ )<br>$$<br>U_d=\frac{1}{2\pi/3}\int_{\frac{\pi}{6}+\alpha}^{\frac{5\pi}{6}+\alpha}\sqrt{2}U_2sin\omega td\omega t=1.17U_2cos\alpha<br>$$</p>
+</li>
+<li><p>断续时<br>$$<br>   U_d=\frac{1}{2\pi/3}\int_{\frac{\pi}{6}+\alpha}^{\pi}\sqrt{2}U_2sin\omega td\omega t=0.675U_2[1+cos\bigg(\frac{\pi}{6}+\alpha\bigg)]<br>$$</p>
+</li>
+</ul>
+<p>晶闸管需要承受的最大反向电压为二次线电压的峰值<br>$$<br>    U=\sqrt{2}\times\sqrt{3}U_2=2.45U_2<br>$$<br>晶闸管阳极与零点之间的最高电压等于变压器二次相电压的峰值，则晶闸管与阴极之间的最大电压等于变压器二次相电压的峰值，即<br>$$<br>    U=\sqrt{2}U_2<br>$$</p>
+<p><strong>带有阻感负载</strong></p>
+<h2 id="三相桥式全控整流电路"><a href="#三相桥式全控整流电路" class="headerlink" title="三相桥式全控整流电路"></a>三相桥式全控整流电路</h2><p><img src="image-4.png" alt="Alt text"></p>
+<h2 id="电容滤波的单相桥式不可控整流电路"><a href="#电容滤波的单相桥式不可控整流电路" class="headerlink" title="电容滤波的单相桥式不可控整流电路"></a>电容滤波的单相桥式不可控整流电路</h2><ul>
+<li>$u_2$ 正半周过零点到$\omega t=0$ 期间，$u_2&lt; u_d$, 则二极管不导通</li>
+<li>$\omega t=0$后，VD1和VD4导通$u_d=u_2$</li>
+</ul>
+</div>
+</section>
+</div>
+
+    <!-- 引入 js 文件 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       
+
+<script src="/js/head.js"></script>
+ 
+
+<script src="/js/prism.js"></script>
+
+ 
+<script src="/js/main.js"></script>
+ 
+ 
+<script src="/js/scripta.js"></script>
+ 
+    <script>
+      Prism.highlightAll();
+    </script>
+
+    
+
+  </body>
+</html>
